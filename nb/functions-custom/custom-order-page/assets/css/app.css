@@ -1,0 +1,88 @@
+body {
+}
+
+.custom__table--wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-right: 20px;
+  background-color: white;
+  box-shadow: 0px 2px 7px -2px rgba(0, 0, 0, 0.2);
+}
+
+.custom__table--wrapper .custom__table--row--header {
+  display: flex;
+  flex-direction: row;
+
+  padding: 10px;
+  border-bottom: 3px solid #ddd;
+}
+
+.custom__table--wrapper .custom__table--row--header > div {
+  font-weight: 600;
+  flex: 1;
+}
+
+.custom__table--wrapper .custom__table--row {
+  display: flex;
+  flex-direction: row;
+
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.custom__table--wrapper .custom__table--row > div {
+  flex: 1;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.order-lang {
+  display: inline-block;
+  width: 16px;
+  height: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.order-lang.lang-se {
+  background-image: url(../images/flags/flag-sweden.png);
+}
+
+.order-lang.lang-fi {
+  background-image: url(../images/flags/flag-finland.png);
+}
+
+.order-lang.lang-eng {
+  background-image: url(../images/flags/flag-england.png);
+}
+
+.order-lang.lang-nl {
+  background-image: url(../images/flags/flag-netherlands.png);
+}
+
+.order-lang.lang-dk {
+  background-image: url(../images/flags/flag-denmark.png);
+}
+
+.order-lang.lang-de {
+  background-image: url(../images/flags/flag-germany.png);
+}
+
+.sdx-app-wrapper {
+  display: inline-block;
+  width: 100%;
+  padding: 30px;
+  background: white;
+  box-shadow: 0px 2px 7px -2px rgba(0, 0, 0, 0.2);
+}
+
+@media print {
+  body {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+  }
+}

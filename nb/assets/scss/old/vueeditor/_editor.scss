@@ -1,0 +1,1494 @@
+$spacing-base: 20px;
+$spacing-xs: $spacing-base;
+$spacing-sm: $spacing-base * 2;
+$spacing-md: $spacing-base * 3;
+$spacing-lg: $spacing-base * 4;
+$spacing-xl: $spacing-base * 5;
+
+v-cloak {
+  display: none;
+}
+
+// ------------------------------------------------
+// Sign information
+// ------------------------------------------------
+.signalert {
+  color: $theme-orange;
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid #ff6a44;
+  @include border_radius(3px);
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    background-image: url("../img/vueeditor/text-editor-icons.jpg");
+    background-size: 270px;
+    background-repeat: no-repeat;
+    background-position: -118px -157px;
+    vertical-align: bottom;
+  }
+}
+
+.bg-primary {
+  background-color: #0f1f33 !important;
+}
+
+.choose-sign-type {
+  color: var(--main-black);
+}
+
+.btn-success {
+  background-color: #15cd72;
+  border-color: #15cd72;
+}
+
+#vueeditor {
+  // Reset
+  form {
+    margin-bottom: 0;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    cursor: pointer;
+
+    &::before {
+      font-family: $iconfont;
+      content: "\f136";
+    }
+  }
+
+  .vueeditor-inner {
+    @include border_radius(10px);
+    background-color: transparent;
+    position: relative;
+
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
+
+  // ---------------------------------------------
+  // Forms
+  // ---------------------------------------------
+  .radio {
+    input[type="radio"] {
+      display: none;
+    }
+  }
+
+  // ---------------------------------------------
+  // Reset design
+  // ---------------------------------------------
+  .reset-design {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+
+    button {
+      border: none;
+      background-color: transparent;
+
+      &::before {
+        font-family: $iconfont;
+        content: "\f1b5";
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+
+  // ---------------------------------------------
+  // Loader
+  // ---------------------------------------------
+  #editor-loader {
+    width: 100%;
+    height: 100%;
+    background: white;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../img/vueeditor/ajaxloader.gif");
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+
+  // ---------------------------------------------
+  // Generator canvas, alignment misc
+  // ---------------------------------------------
+  .generator-canvas-wrapper {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    & > div {
+      display: inline-block;
+      max-width: 60%;
+      height: auto;
+      position: relative;
+
+      cursor: pointer;
+
+      &::before {
+        content: "T";
+        font-family: Times, serif;
+        font-size: 1.6rem;
+        color: #007bff;
+        text-align: center;
+        line-height: 48px;
+
+        width: 48px;
+        height: 48px;
+
+        @include border_radius(100%);
+        background-color: white;
+
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        z-index: 10;
+
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+
+        display: none;
+      }
+    }
+
+    &:hover {
+      & > div {
+        @include border_radius(3px);
+        border: 1px solid #a4d0ff;
+
+        &::before {
+          display: block;
+        }
+      }
+    }
+
+    // Canvas
+    canvas {
+      max-width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 5;
+    }
+
+    .generator-canvas-original-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .generator-canvas-activate-text-editor {
+      padding: 5px 13px;
+
+      border-radius: 10px;
+      background-color: white;
+
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      z-index: 11;
+
+      -webkit-transform: translate(-50%, 0);
+      -moz-transform: translate(-50%, 0);
+      -o-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+
+      -webkit-box-shadow: 2px 0 11px rgba(0, 0, 0, 0.05);
+      -moz-box-shadow: 2px 0 11px rgba(0, 0, 0, 0.05);
+      box-shadow: 2px 0 11px rgba(0, 0, 0, 0.05);
+
+      cursor: pointer;
+
+      // Animation
+      -webkit-animation: bobupdown 5s infinite; /* Safari 4.0 - 8.0 */
+      animation: bobupdown 5s infinite;
+
+      span {
+        font-size: 1rem;
+        color: $theme-blue;
+        letter-spacing: -0.02rem;
+        line-height: 1.2;
+        text-decoration: underline;
+        display: inline-block;
+      }
+
+      &::before {
+        content: "";
+
+        width: 20px;
+        height: 20px;
+
+        border-top: 10px solid white;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+
+        position: absolute;
+        bottom: -19px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+
+      &::after {
+        content: "";
+        width: 20px;
+        height: 10px;
+
+        @include border_radius(100%);
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        bottom: -23px;
+        left: 50%;
+
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding-left: 15px;
+      padding-right: 15px;
+
+      position: relative;
+
+      transform: translate(0, 0);
+
+      & > div {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .render {
+    min-height: 520px;
+    border-radius: 5px;
+    background-color: white;
+
+    @media (max-width: 768px) {
+      min-height: 421px;
+    }
+  }
+
+  .sign-information {
+    margin-bottom: $spacing-xs;
+
+    h1 {
+      font-family: $basefont;
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      padding-right: 30px;
+      margin-bottom: $spacing-xs/2;
+      max-width: 80%;
+    }
+
+    .sign-real-size {
+      font-size: 1.2rem;
+      color: $theme-black;
+
+      font-size: $small-text;
+      display: inline-block;
+      margin-bottom: $spacing-xs/2;
+    }
+
+    .btn {
+      &.btn-link {
+        color: $theme-black;
+        padding: 0;
+        cursor: pointer;
+
+        &::before {
+          font-family: $iconfont;
+          content: "\f2f9";
+          display: inline-block;
+          margin-right: 3px;
+          width: 18px;
+        }
+      }
+    }
+
+    .sign-information-color {
+      & > div {
+        display: inline-block;
+
+        &:first-child {
+          width: 18px;
+          height: 18px;
+          @include border_radius(100%);
+          vertical-align: middle;
+          background-repeat: no-repeat;
+          background-position: center center;
+          margin-top: -2px;
+        }
+
+        &:last-of-type {
+          font-size: $small-text;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .sign {
+      &.sign-desc {
+        font-size: $small-text;
+        margin-top: $spacing-xs/2;
+        margin-bottom: $spacing-xs/2;
+      }
+    }
+
+    .sign-properties {
+      margin-top: $spacing-xs;
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          font-size: $small-text;
+        }
+      }
+
+      .in-stock {
+        &::before {
+          font-family: FontAwesome;
+          content: "\f058";
+          margin-right: 5px;
+        }
+      }
+
+      .sent-message {
+        &::before {
+          font-family: FontAwesome;
+          content: "\f0d1";
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  // ---------------------------------------------
+  // Sign options
+  // ---------------------------------------------
+
+  // Sign options containers
+  .sign-option-container {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+
+    -webkit-box-shadow: 0px -1px 9px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px -1px 9px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px -1px 9px 0px rgba(0, 0, 0, 0.35);
+
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-top: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid white;
+
+      position: absolute;
+      top: -16px;
+      left: 10px;
+    }
+  }
+
+  .sign-options {
+    min-width: 240px;
+
+    h4 {
+      font-size: 0.8rem;
+    }
+
+    .sign-options-row {
+      margin-bottom: 5px;
+    }
+
+    .font-item {
+      padding: 2px 6px;
+      cursor: pointer;
+
+      &.active {
+        color: white;
+        @include border_radius(2px);
+        background-color: $theme-blue;
+      }
+    }
+
+    .sizes {
+      .textsize-item {
+        padding: 2px 6px;
+        cursor: pointer;
+
+        &.active {
+          color: white;
+          @include border_radius(2px);
+          background-color: $theme-blue;
+        }
+      }
+    }
+
+    .selected-option,
+    .option-option {
+      display: block;
+      width: 100%;
+
+      .selected-option-image {
+        max-width: 20px;
+        height: auto;
+      }
+    }
+
+    .option-option {
+      font-size: $small-text;
+    }
+
+    .button {
+      text-align: left;
+      border: 1px solid #ccc;
+      background-color: white;
+      position: relative;
+
+      .selected-option {
+        position: relative;
+
+        &::after {
+          font-family: $iconfont;
+          content: "\f2f9";
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+
+      &.big {
+        width: 100%;
+      }
+
+      &.arrow {
+      }
+    }
+  }
+
+  .sign-options-blocker {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+
+  .sign-options-input-fields {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    overflow: hidden;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 99;
+
+    &:not(.active) {
+      width: 48px;
+      height: 48px;
+
+      // Close button
+      .close {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        opacity: 1;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        &::before {
+          content: "T";
+          font-family: Times, serif;
+          font-size: 1.6rem;
+          color: $theme-blue;
+          text-align: center;
+          line-height: 48px;
+        }
+      }
+    }
+
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+
+    @include border_radius(100%);
+
+    &.active {
+      display: inline-block;
+      width: 390px;
+      height: auto;
+
+      bottom: 10px;
+      left: 10px;
+
+      @include border_radius(0);
+
+      // Close button
+      .close {
+        display: inline-block;
+      }
+
+      &::before {
+        content: "";
+        display: none;
+      }
+    }
+
+    .sign-options-input {
+      input[type="text"] {
+        margin-bottom: 5px;
+        background-color: rgba(225, 249, 255, 0.5);
+
+        &:focus {
+        }
+      }
+
+      &-fields-group {
+        display: inline-block;
+        width: 100%;
+        border: 1px solid #ddd;
+        vertical-align: top;
+      }
+    }
+  }
+
+  // ---------------------------------------------
+  // Price
+  // ---------------------------------------------
+  .price-container {
+    margin-top: $spacing-xs;
+    .price {
+      display: inline-block;
+      &.sale {
+        color: $theme-orange;
+        span {
+          color: $theme-black;
+          text-decoration: line-through;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    }
+
+    .pricevat {
+      font-size: $small-text;
+      color: $theme-grey;
+      margin-bottom: 7px;
+    }
+
+    & > div {
+      display: inline-block;
+    }
+
+    & .current-price {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: $theme-orange;
+      display: inline-block;
+      width: 100%;
+
+      span {
+      }
+    }
+  }
+}
+
+.vueproducts {
+  .product-group {
+    & > div {
+      vertical-align: top;
+    }
+  }
+
+  .product-item {
+    text-align: center;
+    display: inline-block;
+    width: 33%;
+    padding: $spacing-xs;
+    border: 1px solid #ddd;
+    background-color: white;
+
+    h3 {
+      font-size: 1rem;
+      text-transform: capitalize;
+      margin-bottom: 0;
+      padding: 0 20px 0 20px;
+    }
+
+    .product-item-thumbnail {
+      text-align: center;
+      margin-bottom: $spacing-xs;
+      img {
+        display: inline-block;
+        max-width: 120px;
+        height: auto;
+      }
+    }
+  }
+}
+
+// ---------------------------------------------
+// Font Loader
+// ---------------------------------------------
+.font-loader {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 2px;
+  list-style-type: none;
+  position: relative;
+  overflow: hidden;
+  visibility: hidden;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .font-loader-item {
+    font-size: 0;
+    line-height: 0;
+    height: 2px;
+
+    &.active {
+      //
+    }
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+
+    div {
+      color: var(--main-green);
+      display: inline-block;
+      height: 5px;
+      background-color: var(--main-green);
+
+      overflow: hidden;
+      vertical-align: top;
+    }
+  }
+}
+
+// ---------------------------------------------
+// Sign options
+// ---------------------------------------------
+.sign-options {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.order-contents {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  @include border_radius(15px);
+  background-color: white;
+
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  display: none;
+
+  .current-sign-image {
+    text-align: center;
+
+    img {
+      display: inline-block;
+      max-width: 200px;
+      height: auto;
+    }
+  }
+
+  .current-sign-backside {
+    position: absolute;
+    top: -20px;
+
+    //width: 145px;
+    //height: 145px;
+
+    width: 100px;
+    height: 100px;
+
+    @include border_radius(100%);
+
+    -webkit-box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.3);
+    background-color: white;
+
+    overflow: hidden;
+
+    &::before {
+      font-family: $iconfont;
+      font-size: 3rem;
+      font-weight: 600;
+      color: $theme-black;
+      content: "\f276";
+      position: absolute;
+      left: 10px;
+      top: 20%;
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+      background-size: 510px;
+      background-repeat: no-repeat;
+      background-image: url("../img/vueeditor/sign-interfaces.png");
+    }
+
+    // ---------------------------------------------
+    // Tape
+    // ---------------------------------------------
+    &.current-interface-tape {
+      div {
+        background-size: 160%;
+        background-image: url("../img/vueeditor/sign-interfaces-tape.jpg");
+        background-position: 50px 29px;
+      }
+    }
+
+    &.current-interface-safetypin {
+      div {
+        background-size: 354px;
+        background-position: -185px 10px;
+      }
+    }
+
+    &.current-interface-metalmagnet {
+      div {
+        background-size: 430px;
+        background-position: -31px -115px;
+      }
+    }
+
+    &.current-interface-plasticmagnet {
+      div {
+        background-size: 430px;
+        background-position: -31px 11px;
+      }
+    }
+
+    // Military clip
+    &.current-interface-militaryclip {
+      div {
+        background-size: 350px;
+        background-position: -36px -182px;
+      }
+    }
+
+    &.current-interface-keyring {
+      div {
+        background-size: 821px;
+        background-position: -515px -495px;
+      }
+    }
+  }
+}
+
+// ---------------------------------------------
+// Toolbar
+// ---------------------------------------------
+.toolbar {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--light-grey);
+  background-color: white;
+
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+
+  position: absolute;
+  top: 14px;
+  z-index: 10;
+
+  button {
+    background-color: white;
+
+    &:hover {
+      background-color: white;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+    }
+  }
+
+  &-item {
+    height: 48px;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+
+    &-btn {
+      width: 48px;
+      height: 48px;
+
+      &::before {
+        font-family: $iconfont;
+        // Smooth
+        font-size: 1.75rem;
+        line-height: 43px;
+        color: $theme-grey;
+        content: "";
+      }
+    }
+
+    &.active {
+      -webkit-box-shadow: inset 0px 0px 0px 2px rgba(0, 122, 243, 0.8);
+      -moz-box-shadow: inset 0px 0px 0px 2px rgba(0, 122, 243, 0.8);
+      box-shadow: inset 0px 0px 0px 2px rgba(0, 122, 243, 0.8);
+
+      &::before {
+        color: $theme-black;
+      }
+    }
+
+    &.italic {
+      &::before {
+        content: "\f245";
+      }
+    }
+
+    &.bold {
+      &::before {
+        content: "\f23d";
+      }
+    }
+
+    &.left {
+      &::before {
+        content: "\f23b";
+      }
+    }
+
+    &.center {
+      &::before {
+        content: "\f239";
+      }
+    }
+
+    &.right {
+      &::before {
+        content: "\f23c";
+      }
+    }
+
+    &.textuppercase {
+      &::before {
+        content: "\f256";
+      }
+    }
+
+    &.textsize {
+      &::before {
+        content: "\f24b";
+      }
+    }
+
+    &.textfont {
+      &::before {
+        content: "\f16a";
+      }
+    }
+
+    &.reset-design {
+      &::before {
+        content: "\f16a";
+      }
+    }
+  }
+
+  &-separator div {
+    display: inline-block;
+    width: 1px;
+    height: 44px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: var(--main-grey);
+    position: relative;
+  }
+
+  // Text sizes
+
+  .toolbar-item {
+    &.textsize {
+      .toolbar-selected-textsize {
+        font-size: $small-text;
+        color: white;
+        padding: 1px 4px;
+        @include border_radius(8px);
+        background-color: $theme-blue;
+
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+      }
+    }
+  }
+}
+
+input[type="number"] {
+  width: 4rem;
+  margin-top: 6px;
+}
+
+// ------------------------------------------------
+// Tabs
+// ------------------------------------------------
+.tabs {
+  border-bottom: 1px solid var(--main-grey);
+  margin-bottom: 10px;
+}
+
+.choose-sign-type {
+  display: inline-block;
+  padding: 10px 4px;
+  border: 1px solid var(--main-grey);
+  border-bottom: none;
+}
+
+.option-holes {
+  text-align: center;
+  display: inline-block;
+  padding: 10px 4px;
+  width: 44px;
+  border-radius: 5px;
+  border: 1px solid var(--main-grey);
+
+  cursor: pointer;
+
+  &.active {
+    color: white;
+    border-color: var(--main-blue);
+    background-color: var(--main-blue);
+  }
+}
+
+// ------------------------------------------------
+// Old
+// ------------------------------------------------
+
+#vueapp {
+  //padding-top: 20px;
+  .row {
+    //margin-bottom: 30px;
+    // background-color: white;
+  }
+}
+
+.vdesigner {
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+
+  // V align
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  // ------------------------------------------
+  // Forms
+  // ------------------------------------------
+  .add_to_cart-container {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    & > div {
+      display: inline-block;
+    }
+
+    .price {
+      &.sale {
+        & > span {
+          text-decoration: line-through;
+          color: #999;
+        }
+      }
+    }
+  }
+
+  // ------------------------------------------
+  // Product data
+  // ------------------------------------------
+  &__product-size {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  // ------------------------------------------------
+  // Editor
+  // ------------------------------------------------
+  &__editor {
+    position: relative;
+
+    input[type="text"] {
+      background-color: white !important;
+    }
+  }
+
+  &__editor-option {
+    margin-bottom: 20px;
+
+    h3 {
+      font-size: 1rem;
+      //text-transform: uppercase;
+    }
+
+    span {
+      padding: 6px 9px;
+      border: 1px solid white;
+      @include border_radius(5px);
+      background-color: white;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    /*
+		// Interfaces
+		.tape,
+		.safetypin,
+		.metalmagnet,
+		.plasticmagnet,
+		.militaryclip {
+			&::before {
+				content: "";
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+			    background-size: 175px;
+				background-image: url(../images/theme/plate-type.png);
+				background-repeat: no-repeat;
+				background-position: 0 3px;
+				vertical-align: middle;
+			}
+		}
+		
+		.tape {
+			&::before {
+				background-position: -143px 3px;
+			}
+		}
+		.safetypin {
+			&::before {
+		    	background-position: -113px 3px;
+		    }
+		}
+		.metalmagnet {
+			&::before {
+				background-position: -78px 3px;
+			}
+		}
+		.plasticmagnet {
+			&::before {
+				background-position: 0px 3px;
+			}
+		}
+		.militaryclip {
+			&::before {
+				background-size: 134px;
+				background-position: -26px 6px;
+			}
+		}
+		*/
+
+    input:checked ~ span {
+      border-color: $border-color;
+    }
+
+    input:checked + span {
+      //
+    }
+  }
+
+  &__editor-styling {
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 20;
+
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.32);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.32);
+
+    & > ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      & > li {
+        display: inline-block;
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1px solid #ddd;
+
+        &:last-of-type {
+          border-right: none;
+          margin-right: 0;
+          padding-right: 0;
+        }
+      }
+    }
+
+    input {
+      display: none;
+    }
+
+    label {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 0;
+      cursor: pointer;
+      border-radius: 2px;
+
+      &:hover {
+        background-color: #f7f7f7;
+
+        -webkit-box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+      }
+
+      &::before {
+        font-family: FontAwesome;
+        font-size: 1.25em;
+        line-height: 30px;
+        text-align: center;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .left {
+      &::before {
+        content: "\f036";
+      }
+    }
+
+    .center {
+      &::before {
+        content: "\f037";
+      }
+    }
+
+    .right {
+      &::before {
+        content: "\f038";
+      }
+    }
+
+    .bold {
+      &::before {
+        content: "\f032";
+      }
+    }
+
+    .italic {
+      &::before {
+        content: "\f033";
+      }
+    }
+  }
+
+  &__text-rows {
+    label {
+      display: none;
+    }
+
+    .field {
+      margin-bottom: 5px;
+    }
+  }
+
+  // ------------------------------------------------
+  // Generated sign
+  // ------------------------------------------------
+  &__generated-sign {
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+    // V align
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+
+    .generated__sign-container {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    img {
+      display: inline-block;
+    }
+
+    &.militaryclip {
+      .generated__sign-container {
+        padding-left: 50px;
+        background: #dcdcdc;
+        border-radius: 5px;
+      }
+
+      img {
+        //
+      }
+    }
+  }
+}
+
+// Floating containers
+
+.vdesigner {
+  &__editor {
+    &-styling label.active {
+      color: white;
+      background-color: $theme-purple;
+    }
+  }
+
+  &__editor-option {
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__product-size {
+    font-family: Montserrat;
+    color: $theme-grey;
+  }
+}
+
+#text-measure {
+  white-space: nowrap;
+  line-height: 1.1;
+  border: 1px solid blue;
+}
+
+.hide-show-textrows {
+  font-size: 0.8em;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 4px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background: white;
+
+  cursor: pointer;
+}
+
+// -----------------------------------------------------
+// Floating containers
+// -----------------------------------------------------
+
+.vdesigner__interfaces-container {
+  padding: 20px;
+  @include border_radius(5px);
+  background-color: white;
+  @include theme_boxshadow();
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  .interface-option {
+    font-size: $small-text;
+    text-align: center;
+    display: inline-block;
+    max-width: 33.3333333%;
+
+    padding: 6px 9px;
+    border: 1px solid white;
+    @include border_radius(5px);
+    background-color: white;
+
+    vertical-align: top;
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    & > div {
+      padding: 5px;
+      &.active {
+        @include border_radius(5px);
+        -webkit-box-shadow: inset 0px 0px 0px 2px rgba(0, 122, 243, 0.8);
+        -moz-box-shadow: inset 0px 0px 0px 2px rgba(0, 122, 243, 0.8);
+        box-shadow: inset 0px 0px 0px 2px rgba(0, 122, 243, 0.8);
+        position: relative;
+
+        &::before {
+          font-family: $iconfont;
+          line-height: 20px;
+          text-align: center;
+          color: white;
+          content: "\f26b";
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          @include border_radius(100%);
+          background-color: $theme-blue;
+          position: absolute;
+          top: 5px;
+          left: 5px;
+        }
+      }
+    }
+
+    .interface-price {
+      font-family: Montserrat;
+      font-weight: 600 !important;
+      font-size: 1.2em;
+      margin-bottom: 3px !important;
+      color: #ff6a44;
+
+      .interface-name {
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+        margin-bottom: 0 !important;
+        text-transform: capitalize;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+
+  .vdesigner__interfaces {
+    span {
+      font-size: 0.8rem;
+
+      &::before {
+        margin-right: 3px;
+      }
+    }
+    label {
+      width: 100%;
+    }
+  }
+}
+
+.sign-options-icons-container {
+  padding: 20px;
+  @include border_radius(5px);
+  background-color: white;
+  @include theme_boxshadow();
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+
+  .icon-selector {
+    max-height: 200px;
+    overflow: auto;
+
+    & > div {
+      display: inline-block;
+      width: 16%;
+      padding: 10px;
+
+      cursor: pointer;
+    }
+  }
+}
+
+.engraving-designer .products li {
+  max-width: 33%;
+}

@@ -1,0 +1,60 @@
+.dropdown-menu {
+  .dropdown-content {
+    .menu {
+      list-style-type: none;
+      .menu-item {
+        &.sv,
+        &.se {
+          a {
+            background-image: url("../../images/flags/flag-sweden.png");
+          }
+        }
+        &.fi {
+          a {
+            background-image: url("../../images/flags/flag-finland.png");
+          }
+        }
+        &.da,
+        &.dk {
+          a {
+            background-image: url("../../images/flags/flag-denmark.png");
+          }
+        }
+        &.uk,
+        &.en {
+          a {
+            background-image: url("../../images/flags/flag-england.png");
+          }
+        }
+        &.de {
+          a {
+            background-image: url("../../images/flags/flag-germany.png");
+          }
+        }
+        &.nl {
+          a {
+            background-image: url("../../images/flags/flag-netherlands.png");
+          }
+        }
+        &.fr {
+          a {
+            background-image: url("../../images/flags/flag-netherlands.png");
+          }
+        }
+
+        a {
+          display: inline-block;
+          width: 100%;
+          padding: 5px 10px 5px 45px;
+          background-size: 27px;
+          background-position: 10px center;
+          background-repeat: no-repeat;
+
+          &:hover {
+            background-color: #f7f7f7;
+          }
+        }
+      }
+    }
+  }
+}

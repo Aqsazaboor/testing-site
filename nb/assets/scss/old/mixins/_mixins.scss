@@ -1,0 +1,17 @@
+@mixin border_radius( $input, $imp:true ) {
+	@if $imp {
+		-webkit-border-radius: $input !important;
+	    -moz-border-radius: $input !important;
+	    border-radius: $input !important;
+	} @else {
+		-webkit-border-radius: $input;
+		-moz-border-radius: $input;
+		border-radius: $input;
+	}
+}
+
+@mixin theme_boxshadow() {
+	-webkit-box-shadow: 2px 0 11px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 2px 0 11px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 0 11px rgba(0, 0, 0, 0.05);
+}

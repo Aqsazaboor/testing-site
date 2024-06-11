@@ -1,0 +1,89 @@
+.admin_page_download-image {
+  #wpadminbar,
+  #adminmenumain,
+  #wpfooter {
+    display: none;
+  }
+  #wpcontent {
+    margin-left: 0;
+  }
+}
+#custom_order_app {
+  .custom-fields {
+  }
+}
+
+.image-generator {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: white;
+
+  .generator-surface {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 32px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 99998;
+    }
+    &::after {
+      content: "Ingen preview";
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 99999;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .button {
+    text-align: center;
+    color: black;
+    min-width: 200px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: transparent;
+
+    &-trigger {
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        transform: translateY(-3px) rotate(45deg);
+      }
+    }
+
+    &-download-trigger {
+      &,
+      &:hover {
+        font-weight: 600;
+        color: white;
+        border-color: var(--wc-blue);
+        background-color: var(--wc-blue);
+      }
+    }
+  }
+
+  .download-option {
+    margin-bottom: 24px;
+  }
+}

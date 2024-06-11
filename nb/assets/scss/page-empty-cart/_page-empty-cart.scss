@@ -1,0 +1,97 @@
+body {
+  .cart-empty.woocommerce-info {
+    display: none;
+  }
+
+  &.woocommerce-cart {
+    .entry {
+      .woocommerce {
+        display: flex;
+        flex-direction: column;
+
+        .page-empty-cart {
+          width: 100%;
+
+          .page-title {
+            text-align: center;
+            width: 100%;
+            margin-top: 24px;
+          }
+
+          &__image {
+            padding: 24px;
+            margin-bottom: 24px;
+
+            img {
+              max-width: 300px;
+              height: auto;
+              margin: 0 auto;
+            }
+          }
+
+          .menu-list {
+            margin-bottom: 24px;
+
+            .menu {
+              list-style-type: none;
+              display: flex;
+              justify-content: center;
+              gap: 8px;
+              li {
+                padding-right: 8px;
+                border-right: 1px solid var(--black);
+                &:last-of-type {
+                  border: none;
+                }
+              }
+              .menu-item {
+                font-size: 1.2rem;
+                font-weight: 600;
+
+                a {
+                  &:hover {
+                    text-decoration: underline;
+                    background-color: transparent;
+                  }
+                }
+              }
+              @media (max-width: 768px) {
+                flex-direction: column;
+                li {
+                  border: none;
+                }
+                .menu-item {
+                  text-align: center;
+                }
+              }
+            }
+          }
+
+          & + .return-to-shop {
+            text-align: center;
+            width: 100%;
+          }
+
+          @media (max-width: 768px) {
+            .page-title {
+              font-size: 1.4rem;
+            }
+            &__image {
+              padding: 0;
+              img {
+                max-width: 100%;
+              }
+            }
+            .columns {
+              margin-bottom: 24px;
+            }
+
+            .menu {
+              gap: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

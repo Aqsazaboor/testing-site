@@ -1,0 +1,32 @@
+.order-lang {
+  &.lang {
+    &-se {
+      background-image: url("../../images/flags/flag-sweden.png");
+    }
+
+    &-fi {
+      background-image: url("../../images/flags/flag-finland.png");
+    }
+
+    &-eng,
+    &-gb {
+      background-image: url("../../images/flags/flag-england.png");
+    }
+
+    &-nl {
+      background-image: url("../../images/flags/flag-netherlands.png");
+    }
+
+    &-dk {
+      background-image: url("../../images/flags/flag-denmark.png");
+    }
+
+    &-de {
+      background-image: url("../../images/flags/flag-germany.png");
+    }
+
+    &-fr {
+      background-image: url("../../images/flags/flag-france.png");
+    }
+  }
+}

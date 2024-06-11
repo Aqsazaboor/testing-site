@@ -1,0 +1,21 @@
+.trustpilot-widget-container {
+  margin-bottom: 0;
+  .columns {
+    .column {
+      padding: 0.75rem;
+    }
+  }
+  margin-top: 0.75rem;
+  @media (max-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 8px;
+    .columns {
+      .column {
+        padding: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

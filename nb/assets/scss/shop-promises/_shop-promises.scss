@@ -1,0 +1,107 @@
+.site {
+  & > .shop-promises-container {
+    background-color: var(--icy-blue);
+
+    .contact-bar {
+      font-size: 1.1rem;
+      display: flex;
+      gap: 16px;
+
+      .telephone {
+        padding-left: 30px;
+        background-image: url("../../images/icons/icon-telephone.svg");
+        background-repeat: no-repeat;
+        background-position: 4px center;
+        background-size: 18px;
+        vertical-align: middle;
+      }
+
+      .email {
+        padding-left: 30px;
+        background-image: url("../../images/icons/icon-email.svg");
+        background-repeat: no-repeat;
+        background-position: 4px center;
+        background-size: 20px;
+        vertical-align: middle;
+      }
+    }
+
+    a {
+      color: var(--black);
+    }
+  }
+}
+
+.shop-promises-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  .shop-promises {
+    width: 100%;
+  }
+
+  .brand-promises-item {
+    font-size: 0.85rem;
+    line-height: 1.2;
+    margin: 0 5px;
+    padding-left: 23px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 20px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .brand-promises-item {
+      font-size: 1rem;
+      padding-left: 30px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+  }
+
+  .shop-promises-container {
+    .brand-promises-item {
+      a {
+        color: var(--black);
+      }
+
+      .log-in,
+      .log-out {
+        &:hover {
+          text-decoration: underline;
+        }
+
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          width: 15px;
+          height: 15px;
+          margin-top: -2px;
+          margin-right: 4px;
+        }
+      }
+
+      .log-in span {
+        background-image: url(../../images/icons/icon-profile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      .log-out span {
+        background-image: url(../../images/icons/icon-profile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #page-wrapper > .shop-promises-container {
+    display: none;
+  }
+}

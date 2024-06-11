@@ -1,0 +1,206 @@
+.search-trigger {
+  a {
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-left: 4px;
+      background-image: url("../../images/icons/icon-search.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 20px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.site-search {
+  display: none !important;
+  padding: 12px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+
+  form {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .field {
+    &.has-addons {
+      background-color: #eee;
+    }
+  }
+
+  &__active {
+    display: block !important;
+  }
+
+  @media (min-width: 768px) {
+    padding: 24px;
+  }
+
+  &-mobile {
+    display: none !important;
+    background-color: white;
+
+    .fibo-search-container {
+      margin: 0;
+      .column {
+        padding: 0;
+        form {
+          margin: 0;
+        }
+      }
+    }
+
+    form {
+      margin-bottom: 8px;
+
+      .input,
+      .textarea,
+      .select select {
+        border-radius: 18px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .button,
+      .input {
+        font-size: 0.8rem;
+      }
+      .button {
+        border-radius: 18px;
+        background-color: #f2f2f2;
+      }
+    }
+
+    .column {
+      padding: 5px;
+    }
+
+    @media (max-width: 768px) {
+      display: block !important;
+    }
+  }
+}
+
+.pagination .page-numbers li .page-numbers.current {
+  color: white;
+}
+
+body.search-results .site-search {
+  display: none !important;
+}
+
+body {
+  &.search,
+  &.search-results {
+    .search-form {
+      display: flex;
+      justify-content: center;
+
+      width: 100%;
+      max-width: 900px;
+      padding: 24px;
+      margin: 0 auto 24px auto;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: #ffffff;
+      box-shadow: 0 2px 0px 0px rgba(0, 0, 0, 0.2);
+
+      .field.has-addons {
+        width: 100%;
+        max-width: 600px;
+        & > div {
+          &:first-of-type {
+            flex: 1;
+          }
+        }
+      }
+    }
+
+    .search-results-container {
+      max-width: 790px;
+      margin: 0 auto;
+    }
+
+    // No search results
+    h1.no-search-results {
+      text-align: center;
+      margin-top: 16px;
+      margin-bottom: 0;
+    }
+
+    div.no-search-results {
+      margin-top: 16px;
+      text-align: center;
+      .vincent-lost {
+        display: inline-block;
+        max-width: 190px;
+        height: auto;
+      }
+    }
+
+    .search-trigger {
+      display: none;
+    }
+
+    .page-title {
+      margin-bottom: 24px;
+    }
+
+    .search-results-product {
+      padding: 12px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--main-border);
+      border-radius: 2px;
+
+      h2 {
+        font-size: 1.5rem;
+        margin-top: 12px;
+        margin-bottom: 3px;
+        + p {
+          margin-bottom: 6px;
+        }
+      }
+
+      .product {
+        &-image {
+          max-width: 100%;
+          height: auto;
+          padding: 12px;
+        }
+
+        &-description {
+          margin-bottom: 12px;
+        }
+      }
+
+      .button {
+        font-weight: 600;
+        height: auto;
+        padding: 0;
+        margin-bottom: 6px;
+      }
+    }
+    .pagination {
+      margin: 0;
+    }
+  }
+}
+
+// Fibo Search Container
+
+.fibo-search {
+  &-container {
+    .columns {
+      margin: 0 auto;
+    }
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}

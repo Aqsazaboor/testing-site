@@ -1,0 +1,344 @@
+/* latin */
+@font-face {
+  font-family: "century";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Century Regular"), local("Century-Regular"),
+    url("../webfonts/centuryschoolbook-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "centurybold";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Century Bold"), local("Century-Bold"),
+    url("../webfonts/centuryschoolbookbold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "centuryitalic";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Century Italic"), local("Century-Italic"),
+    url("../webfonts/centuryschoolbookitalic-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "centurybolditalic";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Century Bold Italic"), local("Century-Bold-Italic"),
+    url("../webfonts/centuryschoolbookbolditalic-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GillSansBoldItalic";
+  src: url("../webfonts/GillSansBoldItalic.woff2") format("woff2"),
+    url("../webfonts/GillSansBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../webfonts/Futura-Bold.woff2") format("woff2"),
+    url("../webfonts/Futura-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FranklinGothic";
+  src: url("../webfonts/FranklinGothic-Bold.woff2") format("woff2"),
+    url("../webfonts/FranklinGothic-Bold.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "B Compset";
+  src: url("../webfonts/BCompset.woff2") format("woff2"),
+    url("../webfonts/BCompset.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times";
+  src: url("../webfonts/Times-Italic.woff2") format("woff2"),
+    url("../webfonts/Times-Italic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Courier New";
+  src: url("../webfonts/CourierNewPS-BoldItalicMT.woff2") format("woff2"),
+    url("../webfonts/CourierNewPS-BoldItalicMT.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Simplified Arabic";
+  src: url("../webfonts/SimplifiedArabic.woff2") format("woff2"),
+    url("../webfonts/SimplifiedArabic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DIN Pro Cond";
+  src: url("../webfonts/DINPro-CondensedMedium.woff2") format("woff2"),
+    url("../webfonts/DINPro-CondensedMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Courier New";
+  src: url("../webfonts/CourierNewPS-ItalicMT.woff2") format("woff2"),
+    url("../webfonts/CourierNewPS-ItalicMT.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Times";
+  src: url("../webfonts/Times-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/Times-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "FranklinGothic";
+  src: url("../webfonts/FranklinGothic-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/FranklinGothic-BoldItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GillSansMediumItalic";
+  src: url("../webfonts/GillSansMediumItalic.woff2") format("woff2"),
+    url("../webfonts/GillSansMediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GillSansBold";
+  src: url("../webfonts/GillSansBold.woff2") format("woff2"),
+    url("../webfonts/GillSansBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvantgardeBold";
+  src: url("../webfonts/AvantgardeBold.woff2") format("woff2"),
+    url("../webfonts/AvantgardeBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Garamond";
+  src: url("../webfonts/Garamond-Bold.woff2") format("woff2"),
+    url("../webfonts/Garamond-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times";
+  src: url("../webfonts/Times-Bold.woff2") format("woff2"),
+    url("../webfonts/Times-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Garamond";
+  src: url("../webfonts/Garamond.woff2") format("woff2"),
+    url("../webfonts/Garamond.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../webfonts/Futura-Medium.woff2") format("woff2"),
+    url("../webfonts/Futura-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Courier New";
+  src: url("../webfonts/CourierNewPS-BoldMT.woff2") format("woff2"),
+    url("../webfonts/CourierNewPS-BoldMT.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FranklinGothic";
+  src: url("../webfonts/FranklinGothic-Italic.woff2") format("woff2"),
+    url("../webfonts/FranklinGothic-Italic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Garamond";
+  src: url("../webfonts/Garamond-Italic.woff2") format("woff2"),
+    url("../webfonts/Garamond-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Old English";
+  src: url("../webfonts/OldEnglish.woff2") format("woff2"),
+    url("../webfonts/OldEnglish.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times";
+  src: url("../webfonts/Times.woff2") format("woff2"),
+    url("../webfonts/Times.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BernhardTango BT";
+  src: url("../webfonts/BernhardTangoBT-Regular.woff2") format("woff2"),
+    url("../webfonts/BernhardTangoBT-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CentSchbook BT";
+  src: url("../webfonts/CenturySchoolbookBT-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/CenturySchoolbookBT-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Franklin Gothic Book";
+  src: url("../webfonts/FranklinGothic-Book.woff2") format("woff2"),
+    url("../webfonts/FranklinGothic-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avantgarde";
+  src: url("../webfonts/Avantgarde.woff2") format("woff2"),
+    url("../webfonts/Avantgarde.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GillSansMedium";
+  src: url("../webfonts/GillSansMedium.woff2") format("woff2"),
+    url("../webfonts/GillSansMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CentSchbook BT";
+  src: url("../webfonts/CenturySchoolbookBT-Roman.woff2") format("woff2"),
+    url("../webfonts/CenturySchoolbookBT-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvantGarde-BookOblique";
+  src: url("../webfonts/AvantGarde-BookOblique.woff2") format("woff2"),
+    url("../webfonts/AvantGarde-BookOblique.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CentSchbook BT";
+  src: url("../webfonts/CenturySchoolbookBT-Italic.woff2") format("woff2"),
+    url("../webfonts/CenturySchoolbookBT-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Courier New";
+  src: url("../webfonts/CourierNewPSMT.woff2") format("woff2"),
+    url("../webfonts/CourierNewPSMT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CentSchbook BT";
+  src: url("../webfonts/CenturySchoolbookBT-Bold.woff2") format("woff2"),
+    url("../webfonts/CenturySchoolbookBT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvantGarde";
+  src: url("../webfonts/AvantGarde-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/AvantGarde-BoldItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura Bk BT";
+  src: url("../webfonts/FuturaBT-BookItalic.woff2") format("woff2"),
+    url("../webfonts/FuturaBT-BookItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura Md BT";
+  src: url("../webfonts/FuturaBT-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/FuturaBT-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CG Times";
+  src: url("../webfonts/CGTimes-Regular.woff2") format("woff2"),
+    url("../webfonts/CGTimes-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Garamond";
+  src: url("../webfonts/Garamond-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/Garamond-BoldItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DINPro";
+  src: url("../webfonts/DINPro-CondMedium.woff2") format("woff2"),
+    url("../webfonts/DINPro-CondMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}

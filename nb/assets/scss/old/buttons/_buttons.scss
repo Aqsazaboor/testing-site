@@ -1,0 +1,12 @@
+.btn {
+
+	&.btn-green, &.btn-success {
+	    color: white;
+	    border-color: $theme-green;
+	    background: $theme-green;
+	}
+
+	&.btn-sm {
+		font-size: $small-text;
+	}
+}

@@ -1,0 +1,10 @@
+.page__wrapper {
+  padding: 24px;
+}
+
+// Fix
+.alternate-title {
+  & + strong {
+    display: none;
+  }
+}

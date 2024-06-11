@@ -1,0 +1,667 @@
+/* helvetica */
+
+@font-face {
+  font-family: "freesans";
+  src: url("../webfonts/helvetica/freesans.woff2") format("woff2"),
+    url("../webfonts/helvetica/freesans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "freesansbolditalic";
+  src: url("../webfonts/helvetica/freesansboldoblique.woff2") format("woff2"),
+    url("../webfonts/helvetica/freesansboldoblique.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "freesansitalic";
+  src: url("../webfonts/helvetica/freesansoblique.woff2") format("woff2"),
+    url("../webfonts/helvetica/freesansoblique.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "freesansbold";
+  src: url("../webfonts/helvetica/freesansbold.woff2") format("woff2"),
+    url("../webfonts/helvetica/freesansbold.woff2") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.freesans {
+  font-family: "freesans";
+  font-size: 12px;
+}
+.freesansbolditalic {
+  font-family: "freesansbolditalic";
+  font-size: 12px;
+}
+.freesansitalic {
+  font-family: "freesansitalic";
+  font-size: 12px;
+}
+.freesansbold {
+  font-family: "freesansbold";
+  font-size: 12px;
+}
+
+/* avantgarde */
+
+@font-face {
+  font-family: "avantgarde";
+  src: url("../webfonts/avantgarde/Avantgarde.woff2") format("woff2"),
+    url("../webfonts/avantgarde/Avantgarde.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "avantgardebolditalic";
+  src: url("../webfonts/avantgarde/AvantGarde-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/avantgarde/AvantGarde-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "avantgardeitalic";
+  src: url("../webfonts/avantgarde/AvantGarde-BookOblique.woff2")
+      format("woff2"),
+    url("../webfonts/avantgarde/AvantGarde-BookOblique.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "avantgardebold";
+  src: url("../webfonts/avantgarde/AvantgardeBold.woff2") format("woff2"),
+    url("../webfonts/avantgarde/AvantgardeBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.avantgarde {
+  font-family: "avantgarde";
+  font-size: 12px;
+}
+.avantgardebolditalic {
+  font-family: "avantgardebolditalic";
+  font-size: 12px;
+}
+.avantgardeitalic {
+  font-family: "avantgardeitalic";
+  font-size: 12px;
+}
+.avantgardebold {
+  font-family: "avantgardebold";
+  font-size: 12px;
+}
+
+/* Barlow */
+
+@font-face {
+  font-family: "barlow";
+  src: url("../webfonts/barlow/Barlow-Regular.woff2") format("woff2"),
+    url("../webfonts/barlow/Barlow-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "barlowbolditalic";
+  src: url("../webfonts/barlow/Barlow-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/barlow/Barlow-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "barlowitalic";
+  src: url("../webfonts/barlow/Barlow-Italic.woff2") format("woff2"),
+    url("../webfonts/barlow/Barlow-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "barlowbold";
+  src: url("../webfonts/barlow/Barlow-Bold.woff2") format("woff2"),
+    url("../webfonts/barlow/Barlow-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.barlow {
+  font-family: "barlow";
+  font-size: 12px;
+}
+.barlowbolditalic {
+  font-family: "barlowbolditalic";
+  font-size: 12px;
+}
+.barlowitalic {
+  font-family: "barlowitalic";
+  font-size: 12px;
+}
+.barlowbold {
+  font-family: "barlowbold";
+  font-size: 12px;
+}
+
+/* Playfair Display */
+
+@font-face {
+  font-family: "playfairdisplay";
+  src: url("../webfonts/playfairdisplay/PlayfairDisplay-Regular.woff2")
+      format("woff2"),
+    url("../webfonts/playfairdisplay/PlayfairDisplay-Regular.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "playfairdisplaybolditalic";
+  src: url("../webfonts/playfairdisplay/PlayfairDisplay-BoldItalic.woff2")
+      format("woff2"),
+    url("../webfonts/playfairdisplay/PlayfairDisplay-BoldItalic.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "playfairdisplayitalic";
+  src: url("../webfonts/playfairdisplay/PlayfairDisplay-Italic.woff2")
+      format("woff2"),
+    url("../webfonts/playfairdisplay/PlayfairDisplay-Italic.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "playfairdisplaybold";
+  src: url("../webfonts/playfairdisplay/PlayfairDisplay-Bold.woff2")
+      format("woff2"),
+    url("../webfonts/playfairdisplay/PlayfairDisplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.playfairdisplay {
+  font-family: "playfairdisplay";
+  font-size: 12px;
+}
+.playfairdisplayitalic {
+  font-family: "playfairdisplayitalic";
+  font-size: 12px;
+}
+.playfairdisplaybold {
+  font-family: "playfairdisplaybold";
+  font-size: 12px;
+}
+.playfairdisplaybolditalic {
+  font-family: "playfairdisplaybolditalic";
+  font-size: 12px;
+}
+
+/* Alte DIN */
+
+@font-face {
+  font-family: "altedin";
+  src: url("../webfonts/altedin/AlteDIN1451Mittelschrift.woff2") format("woff2"),
+    url("../webfonts/altedin/AlteDIN1451Mittelschrift.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.altedin {
+  font-family: "altedin";
+  font-size: 12px;
+}
+
+/* Roboto */
+
+@font-face {
+  font-family: "roboto";
+  src: url("../webfonts/roboto/Roboto-Regular.woff2") format("woff2"),
+    url("../webfonts/roboto/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotoitalic";
+  src: url("../webfonts/roboto/Roboto-Italic.woff2") format("woff2"),
+    url("../webfonts/roboto/Roboto-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "robotobold";
+  src: url("../webfonts/roboto/Roboto-Bold.woff2") format("woff2"),
+    url("../webfonts/roboto/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotobolditalic";
+  src: url("../webfonts/roboto/Roboto-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/roboto/Roboto-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+.roboto {
+  font-family: "roboto";
+  font-size: 12px;
+}
+.robotoitalic {
+  font-family: "robotoitalic";
+  font-size: 12px;
+}
+.robotobold {
+  font-family: "robotobold";
+  font-size: 12px;
+}
+.robotobolditalic {
+  font-family: "robotobolditalic";
+  font-size: 12px;
+}
+
+/* Domine */
+
+@font-face {
+  font-family: "domine";
+  src: url("../webfonts/domine/Domine-Regular.woff2") format("woff2"),
+    url("../webfonts/domine/Domine-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "dominebold";
+  src: url("../webfonts/domine/Domine-Bold.woff2") format("woff2"),
+    url("../webfonts/domine/Domine-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.domine {
+  font-family: "domine";
+  font-size: 12px;
+}
+
+.dominebold {
+  font-family: "dominebold";
+  font-size: 12px;
+}
+
+/* Oswald */
+
+@font-face {
+  font-family: "oswald";
+  src: url("../webfonts/oswald/Oswald-Regular.woff2") format("woff2"),
+    url("../webfonts/oswald/Oswald-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.oswald {
+  font-family: "oswald";
+  font-size: 12px;
+}
+
+/* UnifrakturMaguntia */
+
+@font-face {
+  font-family: "unifrakturmaguntia";
+  src: url("../webfonts/unifraktur/UnifrakturMaguntia.woff2") format("woff2"),
+    url("../webfonts/unifraktur/UnifrakturMaguntia.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.unifrakturmaguntia {
+  font-family: "unifrakturmaguntia";
+  font-size: 12px;
+}
+
+/* Courier */
+
+@font-face {
+  font-family: "couriernew";
+  src: url("../webfonts/courier/CourierNewPSMT.woff2") format("woff2"),
+    url("../webfonts/courier/CourierNewPSMT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "couriernewitalic";
+  src: url("../webfonts/courier/CourierNewPS-ItalicMT.woff2") format("woff2"),
+    url("../webfonts/courier/CourierNewPS-ItalicMT.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "couriernewbold";
+  src: url("../webfonts/courier/CourierNewPS-BoldMT.woff2") format("woff2"),
+    url("../webfonts/courier/CourierNewPS-BoldMT.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "couriernewbolditalic";
+  src: url("../webfonts/courier/CourierNewPS-BoldItalicMT.woff2")
+      format("woff2"),
+    url("../webfonts/courier/CourierNewPS-BoldItalicMT.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+.courier {
+  font-family: "couriernew";
+  font-size: 12px;
+}
+
+.couriernewitalic {
+  font-family: "couriernewitalic";
+  font-size: 12px;
+}
+
+.couriernewbold {
+  font-family: "couriernewbold";
+  font-size: 12px;
+}
+
+.couriernewbolditalic {
+  font-family: "couriernewbolditalic";
+  font-size: 12px;
+}
+
+/* Times */
+
+@font-face {
+  font-family: "times";
+  src: url("../webfonts/times/Times-Regular.woff2") format("woff2"),
+    url("../webfonts/times/Times-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "timesbold";
+  src: url("../webfonts/times/Times-Bold.woff2") format("woff2"),
+    url("../webfonts/times/Times-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "timesitalic";
+  src: url("../webfonts/times/Times-Italic.woff2") format("woff2"),
+    url("../webfonts/times/Times-Italic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "timesbolditalic";
+  src: url("../webfonts/times/Times-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/times/Times-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+.times {
+  font-family: "times";
+  font-size: 12px;
+}
+.timesitalic {
+  font-family: "timesitalic";
+  font-size: 12px;
+}
+.timesbolditalic {
+  font-family: "timesbolditalic";
+  font-size: 12px;
+}
+.timesbold {
+  font-family: "timesbold";
+  font-size: 12px;
+}
+
+/* Garamond */
+
+@font-face {
+  font-family: "garamond";
+  src: url("../webfonts/garamond/Apple-Garamond.woff2") format("woff2"),
+    url("../webfonts/garamond/Apple-Garamond.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "garamondbold";
+  src: url("../webfonts/garamond/Garamond-Bold.woff2") format("woff2"),
+    url("../webfonts/garamond/Garamond-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "garamonditalic";
+  src: url("../webfonts/garamond/Garamond-Italic.woff2") format("woff2"),
+    url("../webfonts/garamond/Garamond-Italic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "garamondbolditalic";
+  src: url("../webfonts/garamond/Garamond-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/garamond/Garamond-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+.garamond {
+  font-family: "garamond";
+  font-size: 12px;
+}
+.garamonditalic {
+  font-family: "garamonditalic";
+  font-size: 12px;
+}
+.garamondbolditalic {
+  font-family: "garamondbolditalic";
+  font-size: 12px;
+}
+.garamondbold {
+  font-family: "garamondbold";
+  font-size: 12px;
+}
+
+/* Gill Sans */
+
+@font-face {
+  font-family: "gillsans";
+  src: url("../webfonts/gillsans/GillSans-Medium.woff2") format("woff2"),
+    url("../webfonts/gillsans/GillSans-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gillsansbold";
+  src: url("../webfonts/gillsans/GillSans-Bold.woff2") format("woff2"),
+    url("../webfonts/gillsans/GillSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gillsansitalic";
+  src: url("../webfonts/gillsans/GillSans-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/gillsans/GillSans-BoldItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "gillsansbolditalic";
+  src: url("../webfonts/gillsans/GillSans-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/gillsans/GillSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+.gillsans {
+  font-family: "gillsans";
+  font-size: 12px;
+}
+.gillsansitalic {
+  font-family: "gillsansitalic";
+  font-size: 12px;
+}
+.gillsansbolditalic {
+  font-family: "gillsansbolditalic";
+  font-size: 12px;
+}
+.gillsansbold {
+  font-family: "gillsansbold";
+  font-size: 12px;
+}
+
+/* Century Schoolbook */
+
+@font-face {
+  font-family: "centuryschoolbook";
+  src: url("../webfonts/centuryschoolbook/centuryschoolbook.woff2")
+      format("woff2"),
+    url("../webfonts/centuryschoolbook/centuryschoolbook.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "centuryschoolbookbold";
+  src: url("../webfonts/centuryschoolbook/centuryschoolbookbold.woff2")
+      format("woff2"),
+    url("../webfonts/centuryschoolbook/centuryschoolbookbold.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "centuryschoolbookitalic";
+  src: url("../webfonts/centuryschoolbook/centuryschoolbookitalic.woff2")
+      format("woff2"),
+    url("../webfonts/centuryschoolbook/centuryschoolbookitalic.woff")
+      format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "centuryschoolbookbolditalic";
+  src: url("../webfonts/centuryschoolbook/centuryschoolbookbolditalic.woff2")
+      format("woff2"),
+    url("../webfonts/centuryschoolbook/centuryschoolbookbolditalic.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+.centuryschoolbook {
+  font-family: "centuryschoolbook";
+  font-size: 12px;
+}
+.centuryschoolbookitalic {
+  font-family: "centuryschoolbookitalic";
+  font-size: 12px;
+}
+.centuryschoolbookbolditalic {
+  font-family: "centuryschoolbookbolditalic";
+  font-size: 12px;
+}
+.centuryschoolbookbold {
+  font-family: "centuryschoolbookbold";
+  font-size: 12px;
+}
+
+/* Niconne Regular */
+
+@font-face {
+  font-family: "niconne";
+  src: url("../webfonts/niconne/Niconne-regular.woff") format("woff2"),
+    url("../webfonts/niconne/Niconne-regular.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.niconne {
+  font-family: "niconne";
+  font-size: 12px;
+}
+
+/* Futura */
+
+@font-face {
+  font-family: "futura";
+  src: url("../webfonts/futura/Futura-Medium.woff2") format("woff2"),
+    url("../webfonts/futura/Futura-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "futurabold";
+  src: url("../webfonts/futura/Futura-Bold.woff2") format("woff2"),
+    url("../webfonts/futura/Futura-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "futuraitalic";
+  src: url("../webfonts/futura/Futura-BookItalic.woff2") format("woff2"),
+    url("../webfonts/futura/Futura-BookItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "futurabolditalic";
+  src: url("../webfonts/futura/Futura-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/futura/Futura-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+.futura {
+  font-family: "futura";
+  font-size: 12px;
+}
+.futurabold {
+  font-family: "futurabold";
+  font-size: 12px;
+}
+.futuraitalic {
+  font-family: "futuraitalic";
+  font-size: 12px;
+}
+.futurabolditalic {
+  font-family: "futurabolditalic";
+  font-size: 12px;
+}

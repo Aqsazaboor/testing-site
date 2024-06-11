@@ -1,0 +1,28 @@
+.drawer {
+  .woocommerce-mini-cart {
+    .woocommerce-mini-cart-item {
+      background-color: red;
+      a {
+        &.remove {
+          display: none;
+        }
+        &:not(.remove) {
+          .cart-extra-fields {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .woocommerce-mini-cart__buttons {
+    flex-direction: column;
+
+    button,
+    a {
+      font-weight: 600;
+      min-width: 80%;
+      border-color: var(--blue-500) !important;
+      background-color: var(--blue-500) !important;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.checkout {
+  &__section--header {
+    order: 1;
+    width: 100%;
+    padding: 0 16px;
+  }
+  &__faq {
+    // display: none;
+    margin-top: 40px;
+    order: 4;
+
+    h2 {
+      padding: 0 16px;
+    }
+
+    .faq__wrapper {
+      .faq__question--wrapper {
+        margin: 0 16px;
+        border-bottom: 1px solid var(--main-border);
+        .faq__question {
+          &--trigger {
+            display: flex;
+            gap: 12px;
+            position: relative;
+            &::after {
+              content: "";
+              width: 10px;
+              height: 10px;
+              border-left: 1px solid var(--black);
+              border-bottom: 1px solid var(--black);
+              transform: rotate(-45deg) translateY(-50%);
+              position: absolute;
+              top: 50%;
+              right: 0;
+            }
+          }
+          button {
+            &,
+            &:hover {
+              color: var(--black);
+              text-align: left;
+              width: 100%;
+              padding: 16px 16px 16px 0;
+              border: none;
+
+              background-color: transparent;
+            }
+          }
+        }
+        .faq__answer {
+          display: none;
+          &--open {
+            display: block;
+          }
+          & > div {
+            padding: 16px;
+            margin-bottom: 16px;
+            background-color: white;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+      order: 3;
+    }
+  }
+  &__generated-image {
+    max-width: 120px;
+  }
+}
+
+// Hacks
+
+body {
+  &.woocommerce-cart {
+    // Straight under cart form, desktop!
+    .woocommerce-cart-form {
+      .checkout__faq {
+        display: none;
+
+        @media (min-width: 992px) {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+
+    // Straight under summary, mobile!
+    .entry {
+      .woocommerce {
+        & > .checkout__faq {
+          display: flex;
+          flex-direction: column;
+
+          @media (min-width: 992px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

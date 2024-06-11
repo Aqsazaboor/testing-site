@@ -1,0 +1,55 @@
+.klarna {
+  background-image: url("../../images/svg/po-klarna.svg");
+  background-size: 58px;
+}
+
+.visa {
+  background-image: url("../../images/svg/po-visa.svg");
+  background-size: 58px;
+}
+
+.mastercard {
+  background-image: url("../../images/svg/po-mastercard.svg");
+  background-size: 38px;
+}
+
+.swish {
+  background-image: url("../../images/svg/po-swish.svg");
+  background-size: 58px;
+}
+
+.payment-options-mobile {
+  display: none;
+  @media (max-width: 992px) {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+
+    .payment-merchant {
+      .service-logo {
+        height: 20px;
+        background-size: contain;
+      }
+    }
+  }
+
+  background-size: contain;
+}
+
+body:not(.home) {
+  .payment-options-mobile {
+    display: none;
+  }
+}
+
+.payment-options {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.payment-merchant {
+  width: 60px;
+  // height: 20px;
+}

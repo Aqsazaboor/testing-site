@@ -1,0 +1,27 @@
+.campaign-top-bar {
+  color: white;
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: var(--orange);
+
+  p {
+    margin-bottom: 0 !important;
+  }
+
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    padding: 12px;
+    p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

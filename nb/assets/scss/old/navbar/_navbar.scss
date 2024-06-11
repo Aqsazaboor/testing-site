@@ -1,0 +1,106 @@
+$nth-nav-item-that-needs-margin-right: 2;
+$width-of-navbar-brand-or-logo-in-px: 160px;
+$padding-x-for-navbar-brand-or-logo-in-px: 16px;
+
+@media (min-width: 768px) {
+  .position-md-absolute {
+    position: absolute;
+  }
+  .navbar-nav .nav-item:nth-child(#{$nth-nav-item-that-needs-margin-right}) {
+    //margin-right: $width-of-navbar-brand-or-logo-in-px + ($padding-x-for-navbar-brand-or-logo-in-px * 2);
+  }
+}
+
+.navbar {
+  background-color: white;
+
+  a {
+    color: $text-color;
+  }
+
+  &-top {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+    li {
+      font-size: 1.4em;
+      display: inline-block;
+      padding: 10px 20px;
+    }
+
+    a {
+      color: #333;
+    }
+  }
+
+  &-brand {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: #333;
+    }
+  }
+}
+
+.site-header {
+  padding-top: 0.5em;
+  background-color: transparent;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.site-branding {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  float: none !important;
+
+  /*
+	.site-title {
+		background-position: center center;
+		background-image: url(../images/theme/namnbrickor-nu-logo.svg);
+		background-repeat: no-repeat;
+		background-size: auto;
+	}
+	*/
+
+  .site-title {
+    display: inline-block;
+    padding: 20px 20px;
+    padding: 0;
+  }
+
+  .site-title a {
+    font-size: 1.8rem;
+    color: $theme-darkblue;
+    overflow: hidden;
+    display: inline-block;
+    width: 210px;
+    width: 140px;
+
+    text-decoration: none;
+  }
+
+  .site-brand-title {
+    font-size: 1rem;
+  }
+}
+
+.home.blog .site-header,
+.home.page:not(.page-template-template-homepage) .site-header,
+.home.post-type-archive-product .site-header {
+  margin-bottom: 0;
+}
+
+.site-cart {
+  text-align: right;
+}

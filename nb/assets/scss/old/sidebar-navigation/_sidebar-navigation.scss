@@ -1,0 +1,135 @@
+$icons-file: '../images/theme/ikoner-orange.svg';
+
+.sidebar-navigation {
+	background-color: $sidebar-background-color;
+	
+	// Svg
+	.st0 {
+		fill: $logo-color;
+	}
+	
+	a {
+		color: $link-color;
+	}
+	
+	.site-branding {
+		padding-top: 5px;
+		
+		.site-brand-title {
+			font-size: 1.2rem;
+			line-height: 0;
+			color: $link-color;
+			display: inline-block;
+			
+			transform: translateY(-19px);
+		}
+	}
+	
+	// Category bar
+	
+	.navigation-sidebar {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		
+		.category-icon {
+			display: inline-block;
+			width: 60px;
+			height: 40px;
+			background-image: url($icons-file);
+			background-repeat: no-repeat;
+			background-size: 380px;
+		}
+		
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			
+			li {
+				display: block;
+				width: 100%;
+				
+				a {
+					color: $link-color;
+					display: inline-block;
+					width: 100%;
+					padding: 10px 30px;
+					padding: 6px 28px;
+					margin-bottom: 10px;
+					
+					&, &:hover, &:focus, &:active {
+						text-decoration: none;
+						outline: none !important;
+					}
+				}
+			}
+		}
+		
+		&.category-bar-inline {
+			border-bottom: 1px solid #DDD;
+			background-color: white;
+			
+			ul {
+				-webkit-justify-content: space-around;
+				justify-content: space-around;
+				text-align: center;
+			
+			    padding: 0;
+			    margin: 0;
+			    list-style: none;
+			    -ms-box-orient: horizontal;
+			    display: -webkit-box;
+			    display: -moz-box;
+			    display: -ms-flexbox;
+			    display: -moz-flex;
+			    display: -webkit-flex;
+			    display: flex;
+			}	
+		}
+		
+		a {
+			font-weight: 600;
+			font-size: 1.2em;
+			line-height: 1;
+			color: $theme-darkblue;
+			display: inline-block;
+		}
+		
+		.tillbehor .category-icon {
+			background-position: -201px 0;
+		}
+		
+		.tra .category-icon {
+			background-position: -201px 0;
+		}
+		
+		.metall .category-icon {
+			background-position: -138px 0;
+		}
+		
+		.plast .category-icon {
+			background-position: -67px 0;
+		}
+		
+		.hundbrickor .category-icon {
+			background-position: -256px 0;
+		}
+		
+		.tra .category-icon {
+			background-position: 3px 0;
+		}
+		
+		// -------------------------------------
+		// Moved icon
+		// -------------------------------------
+		.category-icon {
+			display: none !important;
+		}
+	}
+
+		
+	@media(max-width: 768px) {
+		display: none;
+	}
+
+}

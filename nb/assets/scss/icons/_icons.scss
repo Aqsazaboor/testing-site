@@ -1,0 +1,37 @@
+.laser-icon {
+  background-image: url("../../images/svg/laser-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.gravure-icon {
+  background-image: url("../../images/svg/gravure-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.font-icon {
+  background-image: url("../../images/icons/icon-font-selector.svg");
+  background-repeat: no-repeat;
+}
+
+.stock-availability {
+  position: relative;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 100%;
+    background-color: #3a9b60;
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+  }
+
+  &.out-of-stock {
+    &::before {
+      background-color: var(--orange);
+    }
+  }
+}

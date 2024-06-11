@@ -1,0 +1,47 @@
+.module-wrapper.module-wrapper--campaign-surface {
+	border: 1px solid #EEE;
+	background-color: white;
+	
+	-webkit-box-shadow: 2px 0 11px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 2px 0 11px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 0 11px rgba(0, 0, 0, 0.05);
+	
+	h1 {
+		font-weight: 600;
+	}
+	
+	h2 {
+		font-weight: 600;
+	}
+	
+	.text-inner {
+		padding-top: $spacing-sm;
+		padding-left: $spacing-sm;
+	}
+	
+	img {
+		@include border_radius(0);
+	}
+	
+	.image {
+		padding-right: 0;
+	}
+	
+	@media(max-width: 768px) {
+		h2 {
+			font-size: 1.3rem;
+		}
+		
+		p {
+			margin-bottom: 5px;
+		}
+		
+		.text-inner {
+			padding: 15px;
+		}
+		
+		.image {
+			padding: 0;
+		}
+	}
+}

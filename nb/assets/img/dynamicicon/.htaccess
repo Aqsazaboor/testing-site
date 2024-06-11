@@ -1,0 +1,4 @@
+# Koden nedan tillåter ENDAST svg-filer, och skickar vidare requesten till svgproxy.php?image=FILNAMN ... dvs ersätter det filnamn du angav och lägger in det som querystring till svgproxy.php... QSA betyder querystring-append, dvs skicka med querysträngen också (color) 
+
+RewriteEngine On
+RewriteRule ([^.]+\.(svg))$ svgproxy.php?image=$1 [L,QSA]

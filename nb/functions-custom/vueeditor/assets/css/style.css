@@ -1,0 +1,130 @@
+/* Styles */
+
+:root {
+	--main-blue: #111;
+	--main-blue: #0079fb;
+	--main-green: #15cd72;
+	--main-grey: #DDD;
+	--light-grey: #EEE;
+}
+
+body {
+	
+}
+
+.container-fluid {
+	max-width: 1400px;
+}
+
+#app {
+	padding-top: 80px;
+}
+
+#generator-canvas {
+	display: inherit;
+	padding-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	/* Fixes */
+	
+	/*
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	backface-visibility: hidden;
+	
+	transform: perspective(1px) translateY(-50%);
+	
+	transform: translate3d( 0, 0, 0);
+	
+	-webkit-transform: rotate(0.01deg);
+	-moz-transform: rotate(0.01deg);
+	-ms-transform: rotate(0.01deg);
+	-o-transform: rotate(0.01deg);
+	transform: rotate(0.01deg);
+	*/
+
+}
+
+h1 {
+	
+}
+
+h1 + p {
+	margin-bottom: 0;
+}
+
+h4 {
+	font-size: 0.8rem;
+	text-transform: uppercase;
+}
+
+.debug {
+	border: 1px solid red;
+}
+
+.sign {
+	
+}
+
+.sizes {
+	border: 1px solid var(--light-grey);
+	border-radius: 4px;
+}
+
+.sizes .textsize-item {
+	padding: 4px 4px;
+	border-bottom: 1px solid var(--light-grey);
+	cursor: pointer;
+}
+
+.sizes .textsize-item.active {
+	color: white;
+	background-color: var(--main-blue);
+}
+
+
+.sign-options .sign-options-input {
+	margin-bottom: 5px;
+}
+
+.fonts {
+	border: 1px solid var(--light-grey);
+	border-radius: 4px;
+}
+
+.fonts .font-item {
+	padding: 4px 4px;
+	border-bottom: 1px solid var(--light-grey);
+	cursor: pointer;
+}
+
+.fonts .font-item.active {
+	color: white;
+	background-color: var(--main-blue);
+}
+
+
+.sign.sign-desc {
+	font-size: 0.8rem;
+}
+
+.btn {
+	cursor: pointer;
+}
+
+.render {
+	background-color: #f7f7f7;
+}
+
+.nav-link.nav-cart {
+	color: #111 !important;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+	background-color: white;
+	border-radius: 5px;
+}
+
+[v-cloak] {
+	display: none;
+}

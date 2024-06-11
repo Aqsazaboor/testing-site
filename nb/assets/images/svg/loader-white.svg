@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" width="50" height="50" xml:space="preserve">
+<style>
+	.dot1 {
+		-webkit-animation: bounce1;
+		-webkit-animation-duration: 1s;
+		animation: bounce1 infinite;
+		animation-duration: 1s;
+	}
+
+	.dot2 {
+		-webkit-animation: bounce2 infinite;
+		-webkit-animation-duration: 1s;
+		animation: bounce2 infinite;
+		animation-duration: 1s;
+	}
+
+	.dot3 {
+		-webkit-animation: bounce3 infinite;
+		-webkit-animation-duration: 1s;
+		animation: bounce3 infinite;
+		animation-duration: 1s;
+	}
+
+	.dot1, .dot2, .dot3 {
+		fill: white;
+		-webkit-transform: translateY(50%);
+		-moz-transform: translateY(50%);
+		-o-transform: translateY(50%);
+		transform: translateY(50%);
+	}
+
+	@-webkit-keyframes bounce1 {
+		0% {transform: translateY(0px)}
+		30% {transform: translateY(20px)}
+		100% {transform: translateY(0px)}
+	}
+
+	@keyframes bounce1 {
+		0% {transform: translateY(0px)}
+		30% {transform: translateY(20px)}
+		100% {transform: translateY(0px)}
+	}
+
+	@-webkit-keyframes bounce2 {
+		0% {transform: translateY(0px)}
+		50% {transform: translateY(20px)}
+		100% {transform: translateY(0px)}
+	}
+
+	@keyframes bounce2 {
+		0% {transform: translateY(0px)}
+		50% {transform: translateY(20px)}
+		100% {transform: translateY(0px)}
+	}
+
+	@-webkit-keyframes bounce3 {
+		0% {transform: translateY(0px)}
+		70% {transform: translateY(20px)}
+		100% {transform: translateY(0px)}
+	}
+
+	@keyframes bounce3 {
+		0% {transform: translateY(0px)}
+		70% {transform: translateY(20px)}
+		100% {transform: translateY(0px)}
+	}
+</style>
+<circle class="dot1" cx="10.6" cy="25" r="5.3"/>
+<circle class="dot2" cx="25" cy="25" r="5.3"/>
+<circle class="dot3" cx="39.4" cy="25" r="5.3"/>
+</svg>

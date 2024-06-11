@@ -1,0 +1,51 @@
+$kuler-1: #e217ff; // pink
+$kuler-2: #9415e8;
+
+// base
+$kuler-3: #6d24ff;
+
+// darker
+$kuler-4: #2014db;
+$kuler-5: #0e2a9c;
+
+$kuler-green: #08cc27;
+$kuler-orange: #ffa23d;
+
+$theme-darkblue: #0f1f33;
+$theme-black: #3c3c3c;
+$theme-grey: #757575;
+$theme-greylight: #f7f7f7;
+$theme-blue: #007bff;
+$theme-green: $kuler-green;
+$theme-orange: #ff6a44;
+$theme-purple: rgb(88, 29, 207);
+$text-color: $theme-black;
+
+$theme-grey: #666;
+
+$border-color: #eee;
+
+$campaign-background: $theme-purple;
+
+$sidebar-background-color: #ffffff;
+$logo-color: #ff6a44;
+$link-color: #a03f27;
+
+// Base
+$small-text: 0.8rem;
+$body-background-color: #f7f7f7;
+
+// Footer
+$footer-text-color: $theme-black;
+$footer-background: white;
+
+// Spacing
+
+$spacing-base: 20px;
+$spacing-xs: $spacing-base;
+$spacing-sm: $spacing-base * 2;
+$spacing-md: $spacing-base * 3;
+$spacing-lg: $spacing-base * 4;
+$spacing-xl: $spacing-base * 5;
+
+$debug: 0;

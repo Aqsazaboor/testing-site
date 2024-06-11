@@ -1,0 +1,44 @@
+/* Basefont */
+@import url("https://fonts.googleapis.com/css?family=Alata&display=swap");
+
+$iconfont: "Material-Design-Iconic-Font";
+$basefont: "Alata", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Alata", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: $text-color;
+  background-color: $body-background-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Alata", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: $text-color;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  color: $theme-darkblue;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid $border-color;
+}
+
+.home .site-main {
+  margin-top: 1em;
+}

@@ -1,0 +1,26 @@
+dialog {
+  position: fixed;
+  inset-block-start: 0px;
+  inset-block-end: 0px;
+  max-width: calc((100% - 6px) - 2em);
+  max-height: calc((100% - 6px) - 2em);
+  user-select: text;
+  visibility: visible;
+  overlay: auto !important;
+  overflow: auto;
+
+  border: none;
+  background: transparent;
+
+  &::backdrop {
+    position: fixed;
+    inset: 0px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+body {
+  &.drawer-menu-active {
+    overflow: hidden;
+  }
+}

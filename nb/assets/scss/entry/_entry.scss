@@ -1,0 +1,12 @@
+.entry {
+  padding: 0 15px;
+  @media (min-width: 768px) {
+    padding: 30px;
+  }
+
+  p {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@import "alert-boxes";
+@import "my-account";
+@import "product-tabs";
+
+.wc-forward::after,
+.woocommerce-Button--next::after {
+  display: none;
+}
+
+/*
+
+#off-canvas-cart .mm-navbar {
+  border: none;
+}
+
+#off-canvas-cart .mm-navbar__title {
+  color: var(--main-black);
+}
+
+.mm-navbar__title {
+  font-weight: 900;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+}
+
+#off-canvas-cart .button.wc-forward {
+  color: white;
+  border-color: var(--main-green);
+  background-color: var(--main-green);
+  border-radius: 6px;
+  margin-right: 0;
+}
+
+.panel-menu .woocommerce-mini-cart-item {
+  padding: 12px !important;
+}
+
+.panel-menu .woocommerce-mini-cart .checkout__image-merge {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.panel-menu .product_list_widget li > a {
+  line-height: 1.2;
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+}
+
+.panel-menu .product_list_widget li img {
+  float: none;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+*/
+
+.shop_table.cart.woocommerce-cart-form__contents
+  .checkout__generated-image
+  img {
+  max-width: 200px !important;
+  width: 100%;
+}
+
+.shop_table.cart.woocommerce-cart-form__contents
+  .attachment-woocommerce_thumbnail {
+  display: none;
+}
+
+.woocommerce-mini-cart {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.woocommerce-mini-cart > li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.woocommerce-mini-cart > li:last-of-type {
+  border-bottom: none;
+}
+
+.woocommerce-mini-cart-item a {
+  color: var(--black);
+}
+
+.woocommerce-mini-cart-item .minicart__order-image {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+.woocommerce-mini-cart-item .minicart__generated-image {
+  max-width: 100px;
+  height: auto;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.woocommerce-mini-cart .checkout__image-merge {
+  display: none;
+}
+
+.woocommerce-mini-cart__total {
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.woocommerce-mini-cart__total strong {
+  font-weight: 400;
+  color: var(--main-black);
+}
+
+.woocommerce-mini-cart__total .woocommerce-Price-amount.amount {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #363636;
+}
+
+.tabs.wc-tabs .description_tab.active {
+  width: 100%;
+}

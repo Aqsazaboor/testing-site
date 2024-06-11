@@ -1,0 +1,40 @@
+body {
+  &.archive:not(.home) {
+    .entry {
+      .woocommerce-products-header {
+        padding-bottom: 1rem;
+        .page-title {
+          color: var(--black);
+        }
+      }
+      @media (max-width: 768px) {
+        .woocommerce-products-header {
+          padding-bottom: 0;
+          .page-title {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+          }
+        }
+        .term-description {
+          font-size: 0.9rem;
+          line-height: 1.4rem;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .entry {
+        padding: 0;
+      }
+      .category-image {
+        display: none;
+      }
+      .woocommerce-ordering {
+        margin-bottom: 0;
+      }
+      .storefront-sorting {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

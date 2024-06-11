@@ -1,0 +1,25 @@
+.home .site-main .woocommerce-products-header {
+	padding-bottom: 0;
+	margin-bottom: 1em;
+}
+
+.home {
+	// .site-main
+	
+	.woocommerce-products-header {
+		
+		
+	}
+	.woocommerce-products-header__title.page-title {
+		display: none;
+	}
+	
+	&.woocommerce .page-description {
+		margin-bottom: 0;
+		
+		.wp-block-image {
+			margin-bottom: 0;
+		}
+	}
+	
+}

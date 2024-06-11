@@ -1,0 +1,213 @@
+.products {
+  .product {
+    padding: 20px 10px 20px 10px;
+    -webkit-box-shadow: 2px 0 11px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 2px 0 11px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 0 11px rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Product interfaces */
+
+.products {
+  .woocommerce-Price-currencySymbol {
+    margin-left: 5px;
+  }
+
+  .product .product-interfaces {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 2px;
+      margin-left: 2px;
+
+      .interface {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        overflow: hidden;
+
+        @include border_radius(30px);
+        background-image: url("../images/theme/plate-type.svg");
+        background-repeat: no-repeat;
+
+        &.tape {
+          width: 19px;
+          background-position: -74px 4px;
+          background-size: 90px;
+        }
+
+        &.safetypin {
+          width: 18px;
+          background-position: -58px 4px;
+          background-size: 90px;
+        }
+
+        &.metalmagnet {
+          width: 19px;
+          background-position: -40px 4px;
+          background-size: 90px;
+        }
+
+        &.plasticmagnet {
+          width: 19px;
+          background-size: 90px;
+          background-position: 1px 4px;
+        }
+
+        &.militaryclip {
+          width: 19px;
+          background-size: 90px;
+          background-position: -19px 4px;
+        }
+      }
+    }
+  }
+}
+
+.onsale {
+  font-size: $small-text;
+  line-height: 48px;
+  color: white !important;
+  width: 48px;
+  height: 48px;
+  padding: 0 !important;
+  border: none !important;
+  background-color: $theme-orange;
+  @include border_radius(100%);
+  position: absolute;
+  top: 10px !important;
+  left: 10px !important;
+}
+
+.products {
+  &.row {
+    margin-top: 20px;
+
+    .product {
+      border: 1px solid #eee;
+    }
+  }
+
+  .product {
+    text-align: center;
+    margin-bottom: 1em !important;
+    background-color: white;
+    position: relative;
+
+    .price {
+      line-height: 1rem;
+      color: $theme-orange;
+      display: inline-block !important;
+      padding: 2px 10px 2px 10px;
+
+      .amount {
+        color: $theme-orange;
+      }
+    }
+
+    &.sale {
+      .price {
+        color: white;
+        border-color: #ff6a44;
+        background-color: #ff6a44;
+
+        .amount {
+          color: white;
+        }
+      }
+    }
+
+    .product-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .btn {
+      display: none;
+    }
+
+    a {
+      text-decoration: none;
+
+      img {
+        max-height: 50px;
+        width: auto;
+      }
+    }
+
+    img {
+      display: inline-block;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.storefront-product-categories .products .product-category {
+  margin-bottom: 0;
+}
+
+.storefront-product-section .products .product {
+  margin-bottom: 1rem;
+}
+
+.site-header-cart .cart-contents,
+.main-navigation ul.menu > li > a,
+.main-navigation ul.nav-menu > li > a {
+  padding: 0.5em !important;
+}
+
+ul.products li.product .price {
+  font-family: Montserrat;
+  font-weight: 600 !important;
+  font-size: 1.2em;
+  margin-bottom: 3px !important;
+}
+
+.woocommerce-loop {
+  &-product__size {
+    color: #777;
+  }
+
+  &-product__title {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 0 !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-template-template-fullwidth-php
+    .header-widget-region
+    ul.products.columns-3
+    li.product,
+  .page-template-template-fullwidth-php
+    .site-main
+    ul.products.columns-3
+    li.product,
+  .page-template-template-homepage-php
+    .header-widget-region
+    ul.products.columns-3
+    li.product,
+  .page-template-template-homepage-php
+    .site-main
+    ul.products.columns-3
+    li.product,
+  .storefront-full-width-content
+    .header-widget-region
+    ul.products.columns-3
+    li.product,
+  .storefront-full-width-content .site-main ul.products.columns-3 li.product {
+    width: 32.4347826087% !important;
+    float: left;
+    margin-right: 5px !important;
+  }
+}

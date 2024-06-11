@@ -1,0 +1,60 @@
+.category-squares {
+  margin-top: 32px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  a {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 2px 0px 0px rgba(0, 0, 0, 0.2);
+
+    background-image: url(../../images/icons/icon-arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center right 8px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+
+  .columns {
+    margin: 0;
+  }
+
+  .category {
+    text-align: center;
+    position: relative;
+
+    .item {
+      &-title {
+        text-align: left;
+        width: 100%;
+
+        span {
+          font-size: 1rem;
+          display: inline-block;
+          padding: 10px 20px;
+        }
+      }
+      &-image {
+        display: none;
+      }
+    }
+    img {
+      display: inline-block;
+      padding: 20px;
+      max-width: 250px;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0 8px;
+      margin-bottom: 8px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.shop-promises {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 1em 0 0;
+
+  .shop-promises-item {
+    display: inline-block;
+    padding: 1px 13px;
+
+    &::before {
+      font-family: $iconfont;
+      color: $theme-orange;
+      content: "\f26b";
+      margin-right: 5px;
+    }
+  }
+}

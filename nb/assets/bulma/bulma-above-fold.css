@@ -1,0 +1,261 @@
+/* Root */
+
+:root {
+  --main-black: #351408;
+  --main-grey: #ddd;
+  --main-blue: #097dae;
+  --main-blue-dark: #097dae;
+  --main-red-dark: #db380f;
+  --main-purpla: #773ed0;
+}
+
+body {
+  color: var(--main-black) !important;
+  background-color: #f7f7f7;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Navbar */
+
+.navbar {
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-item a {
+  color: var(--main-black);
+}
+
+/* mini cart */
+
+.cart-trigger {
+  display: inline-block;
+}
+
+.cart-trigger .cart-btn {
+  color: var(--main-black);
+}
+
+.cart-trigger .cart-btn {
+  padding-left: 27px;
+  position: relative;
+}
+
+.cart-trigger .cart-btn .badge {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: var(--main-black);
+  position: absolute;
+  top: -10px;
+  left: -6px;
+}
+
+.cart-trigger .cart-btn:before {
+  content: "";
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+
+  background-image: url("../img/svg/basket.svg");
+  background-size: 25px;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+
+.mini-cart .payment-options {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.payment-merchant {
+  width: 60px;
+  height: 20px;
+}
+
+.payment-option {
+  width: 100%;
+  height: 30px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.mini-cart .payment-options li {
+  display: inline-block;
+}
+
+.klarna {
+  background-image: url("../img/svg/po-klarna.svg");
+  background-size: 58px;
+}
+
+.visa {
+  background-image: url("../img/svg/po-visa.svg");
+  background-size: 58px;
+}
+
+.mastercard {
+  background-image: url("../img/svg/po-mastercard.svg");
+  background-size: 38px;
+}
+
+.swish {
+  background-image: url("../img/svg/po-swish.svg");
+  background-size: 58px;
+}
+
+/* Loader */
+
+.loading {
+  width: 50px;
+  padding: 40px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../img/svg/loader.svg");
+  background-size: 50px;
+}
+
+.loader.float {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-otransform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Cross section */
+
+.customer-service a {
+  color: var(--main-black);
+}
+
+/* HERO	*/
+
+.hero-inner {
+  background-size: 100%;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+/* Logo */
+
+.logo-build {
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.logo-build > div {
+  font-weight: bold;
+  color: white;
+  margin-top: -4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-build > svg {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-subline {
+  font-size: 0.8rem;
+  color: var(--main-black);
+}
+
+/* Promises */
+
+.brand-promises {
+  display: flex;
+  justify-content: center;
+}
+
+.promise-item {
+  font-size: 1rem;
+  padding: 7px 20px;
+  margin: 5px 10px;
+  border-radius: 30px;
+  background-color: #eee;
+
+  background-repeat: no-repeat;
+}
+
+.trust-safe-ecommerce {
+  background-image: url("../img/svg/safe-ecommerce.svg");
+}
+
+.trust-quality-engraving {
+  background-image: url("../img/svg/quality-engraving.svg");
+}
+
+.delivery-specs {
+  background-image: url("../img/svg/delivery.svg");
+}
+
+.produced-in-sweden {
+  background-image: url("../img/svg/flag-sweden.svg");
+}
+
+.flat-rate-shipping {
+  background-image: url("../img/svg/shipping-truck.svg");
+}
+
+.screws-included {
+  background-image: url("../img/svg/screws-included.svg");
+}
+
+.product-promises {
+}
+
+.product-promises-item {
+  padding-left: 20px;
+  background-repeat: no-repeat;
+}
+
+/* Popover */
+
+.popover {
+}
+
+/* Small promises */
+
+.shop-promises-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.shop-promises-container li {
+  margin: 0 5px;
+}
+
+.shop-promises-container .brand-promises-item {
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.brand-promises-item {
+}

@@ -1,0 +1,337 @@
+/* Barlow */
+
+@font-face {
+    font-family: 'barlow';
+    src: url('../webfonts/barlow/Barlow-Regular.woff2') format('woff2'),
+        url('../webfonts/barlow/Barlow-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'barlowbolditalic';
+    src: url('../webfonts/barlow/Barlow-BoldItalic.woff2') format('woff2'),
+        url('../webfonts/barlow/Barlow-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'barlowitalic';
+    src: url('../webfonts/barlow/Barlow-Italic.woff2') format('woff2'),
+        url('../webfonts/barlow/Barlow-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'barlowbold';
+    src: url('../webfonts/barlow/Barlow-Bold.woff2') format('woff2'),
+        url('../webfonts/barlow/Barlow-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.barlow {
+	font-family: 'barlow';	
+}
+.barlowbolditalic {
+	font-family: 'barlowbolditalic';
+}
+.barlowitalic {
+	font-family: 'barlowitalic';
+}
+.barlowbold {
+	font-family: 'barlowbold';
+}
+
+/* Playfair Display */
+
+@font-face {
+    font-family: 'playfairdisplay';
+    src: url('../webfonts/playfairdisplay/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('../webfonts/playfairdisplay/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfairdisplaybolditalic';
+    src: url('../webfonts/playfairdisplay/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+        url('../webfonts/playfairdisplay/PlayfairDisplay-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'playfairdisplayitalic';
+    src: url('../webfonts/playfairdisplay/PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('../webfonts/playfairdisplay/PlayfairDisplay-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'playfairdisplaybold';
+    src: url('../webfonts/playfairdisplay/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('../webfonts/playfairdisplay/PlayfairDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.playfairdisplay {
+	font-family: 'playfairdisplay';
+}
+.playfairdisplayitalic {
+	font-family: 'playfairdisplayitalic';
+}
+.playfairdisplaybold {
+	font-family: 'playfairdisplaybold';
+}
+.playfairdisplaybolditalic {
+	font-family: 'playfairdisplaybolditalic';
+}
+
+
+/* Alte DIN */
+
+@font-face {
+    font-family: 'altedin';
+    src: url('../webfonts/altedin/AlteDIN1451Mittelschrift.woff2') format('woff2'),
+        url('../webfonts/altedin/AlteDIN1451Mittelschrift.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Bold isnt that great, and.... bold, removed */
+/*
+@font-face {
+    font-family: 'altedinbold';
+    src: url('../webfonts/altedin/AlteDIN1451Mittelschriftgepraegt.woff2') format('woff2'),
+        url('../webfonts/altedin/AlteDIN1451Mittelschriftgepraegt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+.altedin {
+	font-family: 'altedin';
+}
+/*
+.altedinbold {
+	font-family: 'altedinbold';
+}
+*/
+
+/* Roboto */
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../webfonts/roboto/Roboto-Regular.woff2') format('woff2'),
+        url('../webfonts/roboto/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('../webfonts/roboto/Roboto-Italic.woff2') format('woff2'),
+        url('../webfonts/roboto/Roboto-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../webfonts/roboto/Roboto-Bold.woff2') format('woff2'),
+        url('../webfonts/roboto/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobolditalic';
+    src: url('../webfonts/roboto/Roboto-BoldItalic.woff2') format('woff2'),
+        url('../webfonts/roboto/Roboto-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+.roboto {
+	font-family: 'roboto';
+}
+.robotoitalic {
+	font-family: 'robotoitalic';
+}
+.robotobold {
+	font-family: 'robotobold';
+}
+.robotobolditalic {
+	font-family: 'robotobolditalic';
+}
+
+/* Domine */
+
+@font-face {
+    font-family: 'domine';
+    src: url('../webfonts/domine/Domine-Regular.woff2') format('woff2'),
+        url('../webfonts/domine/Domine-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dominebold';
+    src: url('../webfonts/domine/Domine-Bold.woff2') format('woff2'),
+        url('../webfonts/domine/Domine-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.domine {
+	font-family: 'domine';
+}
+
+.dominebold {
+	font-family: 'dominebold';
+}
+
+
+/* Oswald */
+
+@font-face {
+    font-family: 'oswald';
+    src: url('../webfonts/oswald/Oswald-Regular.woff2') format('woff2'),
+        url('../webfonts/oswald/Oswald-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.oswald {
+	font-family: 'oswald';
+}
+
+/* Felipa */
+
+@font-face {
+    font-family: 'felipa';
+    src: url('../webfonts/felipa/Felipa-Regular.woff2') format('woff2'),
+        url('../webfonts/felipa/Felipa-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.felipa {
+	font-family: 'felipa';
+}
+
+/* UnifrakturMaguntia */
+
+@font-face {
+    font-family: 'unifrakturmaguntia';
+    src: url('../webfonts/unifraktur/UnifrakturMaguntia.woff2') format('woff2'),
+        url('../webfonts/unifraktur/UnifrakturMaguntia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.unifrakturmaguntia {
+	font-family: 'unifrakturmaguntia';
+}
+
+/* Courier */
+
+@font-face {
+    font-family: 'couriernew';
+    src: url('../webfonts/courier/CourierNewPSMT.woff2') format('woff2'),
+        url('../webfonts/courier/CourierNewPSMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'couriernewitalic';
+    src: url('../webfonts/courier/CourierNewPS-ItalicMT.woff2') format('woff2'),
+        url('../webfonts/courier/CourierNewPS-ItalicMT.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'couriernewbold';
+    src: url('../webfonts/courier/CourierNewPS-BoldMT.woff2') format('woff2'),
+        url('../webfonts/courier/CourierNewPS-BoldMT.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'couriernewbolditalic';
+    src: url('../webfonts/courier/CourierNewPS-BoldItalicMT.woff2') format('woff2'),
+        url('../webfonts/courier/CourierNewPS-BoldItalicMT.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+.courier {
+	font-family: 'couriernew';
+}
+
+.couriernewitalic {
+	font-family: 'couriernewitalic';
+}
+
+.couriernewbold {
+	font-family: 'couriernewbold';
+}
+
+.couriernewbolditalic {
+	font-family: 'couriernewbolditalic';
+}
+
+/* Times */
+
+@font-face {
+	font-family: 'times';
+	src: url('../webfonts/times/Times-Regular.woff2') format('woff2'),
+		url('../webfonts/times/Times-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'timesbold';
+    src: url('../webfonts/times/Times-Bold.woff2') format('woff2'),
+        url('../webfonts/times/Times-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'timesitalic';
+    src: url('../webfonts/times/Times-Italic.woff2') format('woff2'),
+        url('../webfonts/times/Times-Italic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'timesbolditalic';
+    src: url('../webfonts/times/Times-BoldItalic.woff2') format('woff2'),
+        url('../webfonts/times/Times-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+.times {
+	font-family: 'times';
+}
+.timesitalic {
+	font-family: 'timesbolditalic';
+}
+.timesbolditalic {
+	font-family: 'timesbolditalic';
+}
+.timesbold {
+	font-family: 'timesbold';
+}

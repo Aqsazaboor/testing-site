@@ -1,0 +1,77 @@
+.widget-area {
+  width: 21.7391304348%;
+  float: right;
+  margin-right: 0;
+
+  .widget {
+    color: #4a4a4a;
+    // padding: 18px;
+    max-width: 100%;
+    margin-bottom: 24px;
+    border-radius: 0.25rem;
+    border-bottom: 1px solid var(--main-border);
+    background-color: white;
+    //box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+    position: relative;
+
+    a {
+      color: var(--theme-link-color);
+      &:hover {
+        color: var(--theme-link-color-hover);
+      }
+    }
+
+    h2,
+    h3 {
+      line-height: 1.2;
+    }
+
+    &__image {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.widget select {
+  max-width: 100%;
+}
+
+.widget .widget-search .search-submit {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.widget .widget-title,
+.widget .widgettitle {
+  font-size: 1.41575em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 0 0 1em;
+  margin-bottom: 1em;
+  font-weight: 300;
+}
+
+.widget ul {
+  margin-left: 0;
+  list-style: none;
+}
+
+.widget ul ul {
+  margin-left: 1.618em;
+}
+
+.widget-area .widget {
+  font-weight: 400;
+}
+
+.widget-area .widget a.button {
+  font-weight: 600 !important;
+}

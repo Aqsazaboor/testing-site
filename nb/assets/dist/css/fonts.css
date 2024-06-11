@@ -1,0 +1,630 @@
+@font-face {
+  font-family: arial;
+  src: url("../../editor-fonts/arial/arial-webfont.woff2") format("woff2"), url("../../editor-fonts/arial/arial-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: arialbolditalic;
+  src: url("../../editor-fonts/arial/arial_bold_italic-webfont.woff2") format("woff2"), url("../../editor-fonts/arial/arial_bold_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: arialitalic;
+  src: url("../../editor-fonts/arial/arial_italic-webfont.woff2") format("woff2"), url("../../editor-fonts/arial/arial_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: arialbold;
+  src: url("../../editor-fonts/arial/arial_bold-webfont.woff2") format("woff2"), url("../../editor-fonts/arial/arial_bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+.arial {
+  font-family: arial;
+  font-display: swap; }
+
+.arialbolditalic {
+  font-family: arialbolditalic;
+  font-display: swap; }
+
+.arialitalic {
+  font-family: arialitalic;
+  font-display: swap; }
+
+.arialwbold {
+  font-family: arialbold;
+  font-display: swap; }
+
+@font-face {
+  font-family: "avantgarde";
+  src: url("../../editor-fonts/avantgarde/Avantgarde.woff2") format("woff2"), url("../../editor-fonts/avantgarde/Avantgarde.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "avantgardebolditalic";
+  src: url("../../editor-fonts/avantgarde/AvantGarde-BoldItalic.woff2") format("woff2"), url("../../editor-fonts/avantgarde/AvantGarde-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: "avantgardeitalic";
+  src: url("../../editor-fonts/avantgarde/AvantGarde-BookOblique.woff2") format("woff2"), url("../../editor-fonts/avantgarde/AvantGarde-BookOblique.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "avantgardebold";
+  src: url("../../editor-fonts/avantgarde/AvantgardeBold.woff2") format("woff2"), url("../../editor-fonts/avantgarde/AvantgardeBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+.avantgarde {
+  font-family: "avantgarde";
+  font-size: 12px; }
+
+.avantgardebolditalic {
+  font-family: "avantgardebolditalic";
+  font-size: 12px; }
+
+.avantgardeitalic {
+  font-family: "avantgardeitalic";
+  font-size: 12px; }
+
+.avantgardebold {
+  font-family: "avantgardebold";
+  font-size: 12px; }
+
+@font-face {
+  font-family: "barlow";
+  src: url("../../editor-fonts/barlow/Barlow-Regular.woff2") format("woff2"), url("../../editor-fonts/barlow/Barlow-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "barlowbolditalic";
+  src: url("../../editor-fonts/barlow/Barlow-BoldItalic.woff2") format("woff2"), url("../../editor-fonts/barlow/Barlow-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: "barlowitalic";
+  src: url("../../editor-fonts/barlow/Barlow-Italic.woff2") format("woff2"), url("../../editor-fonts/barlow/Barlow-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "barlowbold";
+  src: url("../../editor-fonts/barlow/Barlow-Bold.woff2") format("woff2"), url("../../editor-fonts/barlow/Barlow-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+.barlow {
+  font-family: "barlow";
+  font-display: swap; }
+
+.barlowbolditalic {
+  font-family: "barlowbolditalic";
+  font-display: swap; }
+
+.barlowitalic {
+  font-family: "barlowitalic";
+  font-display: swap; }
+
+.barlowbold {
+  font-family: "barlowbold";
+  font-display: swap; }
+
+@font-face {
+  font-family: "canterburyregular";
+  src: url("../../editor-fonts/canterbury/canterbury-webfont.woff2") format("woff2"), url("../../editor-fonts/canterbury/canterbury-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.canterburyregular {
+  font-family: "canterburyregular";
+  font-display: swap; }
+
+@font-face {
+  font-family: "helvetica";
+  src: url("../../editor-fonts/helvetica/Helvetica-Regular.woff2") format("woff2"), url("../../editor-fonts/helvetica/Helvetica-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "helveticabold";
+  src: url("../../editor-fonts/helvetica/Helvetica-Bold.woff2") format("woff2"), url("../../editor-fonts/helvetica/Helvetica-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "helveticaitalic";
+  src: url("../../editor-fonts/helvetica/Helvetica-Italic.woff2") format("woff2"), url("../../editor-fonts/helvetica/Helvetica-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "helveticabolditalic";
+  src: url("../../editor-fonts/helvetica/Helvetica-BoldItalic.woff2") format("woff2"), url("../../editor-fonts/helvetica/Helvetica-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+.helvetica {
+  font-family: "helvetica";
+  font-display: swap; }
+
+.helveticabolditalic {
+  font-family: "helveticabolditalic";
+  font-display: swap; }
+
+.helveticaitalic {
+  font-family: "helveticaitalic";
+  font-display: swap; }
+
+.helveticabold {
+  font-family: "helveticabold";
+  font-display: swap; }
+
+@font-face {
+  font-family: "parisienneregular";
+  src: url("../../editor-fonts/parisienne/parisienne-regular-webfont.woff2") format("woff2"), url("../../editor-fonts/parisienne/parisienne-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.parisienneregular {
+  font-family: "parisienneregular";
+  font-display: swap; }
+
+/* Playfair Display */
+@font-face {
+  font-family: "playfairdisplay";
+  src: url("../../editor-fonts/playfairdisplay/PlayfairDisplay-Regular.woff2") format("woff2"), url("../../editor-fonts/playfairdisplay/PlayfairDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "playfairdisplaybolditalic";
+  src: url("../../editor-fonts/playfairdisplay/PlayfairDisplay-BoldItalic.woff2") format("woff2"), url("../../editor-fonts/playfairdisplay/PlayfairDisplay-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: "playfairdisplayitalic";
+  src: url("../../editor-fonts/playfairdisplay/PlayfairDisplay-Italic.woff2") format("woff2"), url("../../editor-fonts/playfairdisplay/PlayfairDisplay-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "playfairdisplaybold";
+  src: url("../../editor-fonts/playfairdisplay/PlayfairDisplay-Bold.woff2") format("woff2"), url("../../editor-fonts/playfairdisplay/PlayfairDisplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+.playfairdisplay {
+  font-family: "playfairdisplay";
+  font-display: swap; }
+
+.playfairdisplayitalic {
+  font-family: "playfairdisplayitalic";
+  font-display: swap; }
+
+.playfairdisplaybold {
+  font-family: "playfairdisplaybold";
+  font-display: swap; }
+
+.playfairdisplaybolditalic {
+  font-family: "playfairdisplaybolditalic";
+  font-display: swap; }
+
+/* Alte DIN */
+@font-face {
+  font-family: "altedin";
+  src: url("../../editor-fonts/altedin/AlteDIN1451Mittelschrift.woff2") format("woff2"), url("../../editor-fonts/altedin/AlteDIN1451Mittelschrift.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Bold isnt that great, and.... bold, removed */
+/*
+@font-face {
+    font-family: 'altedinbold';
+    src: url('../../editor-fonts/altedin/AlteDIN1451Mittelschriftgepraegt.woff2') format('woff2'),
+        url('../../editor-fonts/altedin/AlteDIN1451Mittelschriftgepraegt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+.altedin {
+  font-family: "altedin";
+  font-display: swap; }
+
+/*
+.altedinbold {
+	font-family: 'altedinbold';
+}
+*/
+/* Roboto */
+@font-face {
+  font-family: "roboto";
+  src: url("../../editor-fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../../editor-fonts/roboto/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "robotoitalic";
+  src: url("../../editor-fonts/roboto/Roboto-Italic.woff2") format("woff2"), url("../../editor-fonts/roboto/Roboto-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "robotobold";
+  src: url("../../editor-fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../../editor-fonts/roboto/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "robotobolditalic";
+  src: url("../../editor-fonts/roboto/Roboto-BoldItalic.woff2") format("woff2"), url("../../editor-fonts/roboto/Roboto-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+.roboto {
+  font-family: "roboto";
+  font-display: swap; }
+
+.robotoitalic {
+  font-family: "robotoitalic";
+  font-display: swap; }
+
+.robotobold {
+  font-family: "robotobold";
+  font-display: swap; }
+
+.robotobolditalic {
+  font-family: "robotobolditalic";
+  font-display: swap; }
+
+/* Domine */
+@font-face {
+  font-family: "domine";
+  src: url("../../editor-fonts/domine/Domine-Regular.woff2") format("woff2"), url("../../editor-fonts/domine/Domine-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "dominebold";
+  src: url("../../editor-fonts/domine/Domine-Bold.woff2") format("woff2"), url("../../editor-fonts/domine/Domine-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+.domine {
+  font-family: "domine";
+  font-display: swap; }
+
+.dominebold {
+  font-family: "dominebold";
+  font-display: swap; }
+
+/* Oswald */
+@font-face {
+  font-family: "oswald";
+  src: url("../../editor-fonts/oswald/Oswald-Regular.woff2") format("woff2"), url("../../editor-fonts/oswald/Oswald-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.oswald {
+  font-family: "oswald";
+  font-display: swap; }
+
+/* Felipa */
+@font-face {
+  font-family: "felipa";
+  src: url("../../editor-fonts/felipa/Felipa-Regular.woff2") format("woff2"), url("../../editor-fonts/felipa/Felipa-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.felipa {
+  font-family: "felipa";
+  font-display: swap; }
+
+/* UnifrakturMaguntia */
+@font-face {
+  font-family: "unifrakturmaguntia";
+  src: url("../../editor-fonts/unifraktur/UnifrakturMaguntia.woff2") format("woff2"), url("../../editor-fonts/unifraktur/UnifrakturMaguntia.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.unifrakturmaguntia {
+  font-family: "unifrakturmaguntia";
+  font-display: swap; }
+
+/* Courier */
+@font-face {
+  font-family: "couriernew";
+  src: url("../../editor-fonts/courier/CourierNewPSMT.woff2") format("woff2"), url("../../editor-fonts/courier/CourierNewPSMT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "couriernewitalic";
+  src: url("../../editor-fonts/courier/CourierNewPS-ItalicMT.woff2") format("woff2"), url("../../editor-fonts/courier/CourierNewPS-ItalicMT.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "couriernewbold";
+  src: url("../../editor-fonts/courier/CourierNewPS-BoldMT.woff2") format("woff2"), url("../../editor-fonts/courier/CourierNewPS-BoldMT.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "couriernewbolditalic";
+  src: url("../../editor-fonts/courier/CourierNewPS-BoldItalicMT.woff2") format("woff2"), url("../../editor-fonts/courier/CourierNewPS-BoldItalicMT.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+.couriernew {
+  font-family: "couriernew";
+  font-display: swap; }
+
+.couriernewitalic {
+  font-family: "couriernewitalic";
+  font-display: swap; }
+
+.couriernewbold {
+  font-family: "couriernewbold";
+  font-display: swap; }
+
+.couriernewbolditalic {
+  font-family: "couriernewbolditalic";
+  font-display: swap; }
+
+/* Niconne Regular */
+@font-face {
+  font-family: "niconne";
+  src: url("../../editor-fonts/niconne/Niconne-regular.woff") format("woff2"), url("../../editor-fonts/niconne/Niconne-regular.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.niconne {
+  font-family: "niconne";
+  font-size: 12px; }
+
+/* Times */
+@font-face {
+  font-family: "times";
+  src: url("../../editor-fonts/times/Times-Regular.woff2") format("woff2"), url("../../editor-fonts/times/Times-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "timesbold";
+  src: url("../../editor-fonts/times/Times-Bold.woff2") format("woff2"), url("../../editor-fonts/times/Times-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "timesitalic";
+  src: url("../../editor-fonts/times/Times-Italic.woff2") format("woff2"), url("../../editor-fonts/times/Times-Italic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: "timesbolditalic";
+  src: url("../../editor-fonts/times/Times-BoldItalic.woff2") format("woff2"), url("../../editor-fonts/times/Times-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+.times {
+  font-family: "times";
+  font-display: swap; }
+
+.timesitalic {
+  font-family: "timesbolditalic";
+  font-display: swap; }
+
+.timesbolditalic {
+  font-family: "timesbolditalic";
+  font-display: swap; }
+
+.timesbold {
+  font-family: "timesbold";
+  font-display: swap; }
+
+/* Century Schoolbook */
+@font-face {
+  font-family: "centuryschoolbook";
+  src: url("../../editor-fonts/centuryschoolbook/centuryschoolbook.woff2") format("woff2"), url("../../editor-fonts/centuryschoolbook/centuryschoolbook.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "centuryschoolbookbold";
+  src: url("../../editor-fonts/centuryschoolbook/centuryschoolbookbold.woff2") format("woff2"), url("../../editor-fonts/centuryschoolbook/centuryschoolbookbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "centuryschoolbookitalic";
+  src: url("../../editor-fonts/centuryschoolbook/centuryschoolbookitalic.woff2") format("woff2"), url("../../editor-fonts/centuryschoolbook/centuryschoolbookitalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: "centuryschoolbookbolditalic";
+  src: url("../../editor-fonts/centuryschoolbook/centuryschoolbookbolditalic.woff2") format("woff2"), url("../../editor-fonts/centuryschoolbook/centuryschoolbookbolditalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+.centuryschoolbook {
+  font-family: "centuryschoolbook";
+  font-display: swap; }
+
+.centuryschoolbookitalic {
+  font-family: "centuryschoolbookitalic";
+  font-display: swap; }
+
+.centuryschoolbookbolditalic {
+  font-family: "centuryschoolbookbolditalic";
+  font-display: swap; }
+
+.centuryschoolbookbold {
+  font-family: "centuryschoolbookbold";
+  font-display: swap; }
+
+/* Garamond */
+@font-face {
+  font-family: garamond;
+  src: url("../../editor-fonts/garamond/EBGaramond-Regular.woff2") format("woff2"), url("../../editor-fonts/garamond/EBGaramond-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: garamondbold;
+  src: url("../../editor-fonts/garamond/EBGaramond-SemiBold.woff2") format("woff2"), url("../../editor-fonts/garamond/EBGaramond-SemiBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "garamonditalic";
+  src: url("../../editor-fonts/garamond/EBGaramond-Italic.woff2") format("woff2"), url("../../editor-fonts/garamond/EBGaramond-Italic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: "garamondbolditalic";
+  src: url("../../editor-fonts/garamond/EBGaramond-BoldItalic.woff2") format("woff2"), url("../../editor-fonts/garamond/EBGaramond-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+.garamond {
+  font-family: garamond;
+  font-display: swap; }
+
+.garamonditalic {
+  font-family: "garamonditalic";
+  font-display: swap; }
+
+.garamondbolditalic {
+  font-family: "garamondbolditalic";
+  font-display: swap; }
+
+.garamondbold {
+  font-family: "garamondbold";
+  font-display: swap; }
+
+/* Gill Sans */
+@font-face {
+  font-family: "gillsans";
+  src: url("../../editor-fonts/gillsans/GillSans-Medium.woff2") format("woff2"), url("../../editor-fonts/gillsans/GillSans-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "gillsansbold";
+  src: url("../../editor-fonts/gillsans/GillSans-Bold.woff2") format("woff2"), url("../../editor-fonts/gillsans/GillSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "gillsansitalic";
+  src: url("../../editor-fonts/gillsans/GillSans-BoldItalic.woff2") format("woff2"), url("../../editor-fonts/gillsans/GillSans-BoldItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: "gillsansbolditalic";
+  src: url("../../editor-fonts/gillsans/GillSans-BoldItalic.woff2") format("woff2"), url("../../editor-fonts/gillsans/GillSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+.gillsans {
+  font-family: "gillsans";
+  font-display: swap; }
+
+.gillsansitalic {
+  font-family: "gillsansitalic";
+  font-display: swap; }
+
+.gillsansbolditalic {
+  font-family: "gillsansbolditalic";
+  font-display: swap; }
+
+.gillsansbold {
+  font-family: "gillsansbold";
+  font-display: swap; }
+
+/* Futura */
+@font-face {
+  font-family: "futura";
+  src: url("../../editor-fonts/futura/Futura-Medium.woff2") format("woff2"), url("../../editor-fonts/futura/Futura-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "futurabold";
+  src: url("../../editor-fonts/futura/Futura-Bold.woff2") format("woff2"), url("../../editor-fonts/futura/Futura-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "futuraitalic";
+  src: url("../../editor-fonts/futura/Futura-BookItalic.woff2") format("woff2"), url("../../editor-fonts/futura/Futura-BookItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: "futurabolditalic";
+  src: url("../../editor-fonts/futura/Futura-BoldItalic.woff2") format("woff2"), url("../../editor-fonts/futura/Futura-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+.futura {
+  font-family: "futura";
+  font-display: swap; }
+
+.futurabold {
+  font-family: "futurabold";
+  font-display: swap; }
+
+.futuraitalic {
+  font-family: "futuraitalic";
+  font-display: swap; }
+
+.futurabolditalic {
+  font-family: "futurabolditalic";
+  font-display: swap; }
+
+/* Marcellus */
+@font-face {
+  font-family: "marcellus";
+  src: url("../../editor-fonts/marcellus/marcellusscregular.woff2") format("woff2"), url("../../editor-fonts/marcellus/marcellusscregular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.marcellus {
+  font-family: "marcellus";
+  font-display: swap; }
+
+/* Stardos Stencil Regular */
+@font-face {
+  font-family: "stardosstencil";
+  src: url("../../editor-fonts/stardosstencil/stardosstencilregular.woff2") format("woff2"), url("../../editor-fonts/stardosstencil/stardosstencilregular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.stardosstencil {
+  font-family: "stardosstencil";
+  font-display: swap; }
+
+@font-face {
+  font-family: "bernhardtango";
+  src: url("../../editor-fonts/bernhard/bernhard-tango-regular.woff2") format("woff2"), url("../../editor-fonts/bernhard/bernhard-tango-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+.bernhardtango {
+  font-family: "bernhardtango";
+  font-display: swap; }

@@ -1,0 +1,65 @@
+.language-switcher {
+  li {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.language-switcher {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    &::before {
+      content: "";
+      vertical-align: text-bottom;
+      display: inline-block;
+      width: 30px;
+      height: 20px;
+      margin-right: 7px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  [lang="sv-SE"] {
+    &::before {
+      background-image: url("../img/flag/sv-SE.png");
+    }
+  }
+
+  [lang="en-GB"] {
+    &::before {
+      background-image: url("../img/flag/en-GB.png");
+    }
+  }
+
+  [lang="de-DE"] {
+    &::before {
+      background-image: url("../img/flag/de-DE.png");
+    }
+  }
+
+  [lang="da-DK"] {
+    &::before {
+      background-image: url("../img/flag/da-DK.png");
+    }
+  }
+
+  [lang="fi"] {
+    &::before {
+      background-image: url("../img/flag/fi-FI.png");
+    }
+  }
+
+  li {
+    display: inline-block;
+
+    a {
+      color: $theme-black;
+      margin-right: 7px;
+    }
+  }
+}

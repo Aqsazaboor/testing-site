@@ -1,0 +1,37 @@
+.site-content {
+  &::before {
+  }
+}
+
+.storefront {
+  &-sorting {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent;
+  }
+
+  &-product-pagination {
+    a {
+      &[rel="prev"] {
+        float: left;
+      }
+
+      &[rel="next"] {
+        float: right;
+      }
+    }
+  }
+}
+
+.storefront-product-pagination {
+  display: inline-block !important;
+  width: 100%;
+  padding-top: $spacing-xs;
+  padding-bottom: $spacing-xs;
+  margin-bottom: $spacing-xs;
+
+  a {
+    display: inline-block;
+    padding: 20px;
+  }
+}

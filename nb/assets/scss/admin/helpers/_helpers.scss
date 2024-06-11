@@ -1,0 +1,7 @@
+.woocommerce-layout {
+  .woocommerce-layout__primary {
+    &:has(.woocommerce-layout__notice-list) {
+      // display: none;
+    }
+  }
+}

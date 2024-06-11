@@ -1,0 +1,242 @@
+{
+	"productgroup" : {"name" : "Namnbrickor", "desc" : "Lorem ipsum dolor sit amet."},
+	"signshapes" : {
+		"militärklämma": {"name" : "militärklämma","icon" : "clipicon"},
+		"brass" : {"name" : "mässing","icon" : "ellipsicon"},
+		"nickel" : {"name" : "Nickel","icon" : "nickelicon"},
+		"plast" : {"name" : "Plast","icon" : "plasticsicon"}
+		},
+	"products": {
+		"militaryclip" : {
+			"category" : "militaryclip",
+			"categoryname" : "Militärclip",
+			"categoryimage" : "cat-image-clipsize.png",
+			"categoryinterface" : {"clip" : "clip", "magnet" : "magnet", "pin" : "pin"},
+			"category-description" : "Namnbricka i metall Går utmärkt att gravera. Mått: 85x25 mm. Klämman är i rostfritt stål",
+			"items" : {
+				"nametagred": {
+					"id" : "123213123",
+					"sku" : "sdad8989asd",
+					"name" : "Namnbricka röd",
+					"material" : "plast",
+					"price" : "150",
+					"specs" : {
+						"color" : {"color" : "red", "colorname" : "Röd", "textcolor" : "white"},
+						"file" : "nametagred.png",
+						"shape" : "rectangel",
+						"size" : {"width" : "80","height": "25"}
+					}
+				},
+				"nametagblack": {
+					"id" : "123213123",
+					"sku" : "sdad8989asd",
+					"name" : "Namnbricka svart",
+					"material" : "plast",
+					"price" : "150",
+					"specs" : {
+						"color" : {"color" : "black", "colorname" : "Svart", "textcolor" : "white"},
+						"file" : "nametagblack.png",
+						"shape" : "rectangel",
+						"size" : {"width" : "80","height": "25"}
+					}
+				},
+				"nametagyellow": {
+					"id" : "123213123",
+					"sku" : "sdad8989asd",
+					"name" : "Namnbricka gul",
+					"material" : "plast",
+					"price" : "150",
+					"specs" : {
+						"color" : {"color" : "yellow", "colorname" : "Gul", "textcolor" : "black"},
+						"file" : "nametagyellow.png",
+						"shape" : "rectangel",
+						"size" : {"width" : "80","height": "25"}
+					}
+				},
+				"nametagwhite": {
+					"id" : "123213123",
+					"sku" : "sdad8989asd",
+					"name" : "Namnbricka vit",
+					"material" : "plast",
+					"price" : "150",
+					"specs" : {
+						"color" : {"color" : "white", "colorname" : "Vit", "textcolor" : "black"},
+						"file" : "nametagwhite.png",
+						"shape" : "rectangel",
+						"size" : {"width" : "80","height": "25"}
+					}
+				},
+				"nametagsilver": {
+					"id" : "123213123",
+					"sku" : "sdad8989asd",
+					"name" : "Namnbricka silver",
+					"material" : "plast",
+					"price" : "150",
+					"specs" : {
+						"color" : {"color" : "nickel", "colorname" : "Silver", "textcolor" : "black"},
+						"file" : "nametagnickel.png",
+						"shape" : "rectangel",
+						"size" : {"width" : "80","height": "25"}
+					}
+				},
+				"nametaggold": {
+					"id" : "123213123",
+					"sku" : "sdad8989asd",
+					"name" : "Namnbricka mässing",
+					"material" : "brass",
+					"price" : "150",
+					"specs" : {
+						"color" : {"color" : "brass", "colorname" : "Mässing", "textcolor" : "black"},
+						"file" : "nametagbrass.png",
+						"shape" : "rectangel",
+						"size" : {"width" : "80","height": "25"}
+					}
+				}
+			}
+		},
+		"round" : {
+			"category" : "round",
+			"categoryname" : "Rund",
+			"categoryimage" : "cat-image-round.png",
+			"categoryinterface" : {"magnet" : "magnet","pin" : "pin"},
+			"category-description" : "Namnbricka i metall Går utmärkt att gravera. Mått: 85x25 mm. Klämman är i rostfritt stål",
+			"items" : {
+				"plasticround": {
+					"id" : "123213123",
+					"sku" : "sdad8989asd",
+					"name" : "Rund vit",
+					"material" : "plast",
+					"price" : "150",
+					"specs" : {
+						"color" : {"color" : "white", "colorname" : "Vit", "textcolor" : "black"},
+						"file" : "plasticround.png",
+						"shape" : "rectangel",
+						"size" : {"width" : "60","height": "30"}
+					}
+				},
+				"brassround": {
+					"id" : "123213123",
+					"sku" : "sdad8989asd",
+					"name" : "Rund mässing",
+					"material" : "mässing",
+					"price" : "150",
+					"specs" : {
+						"color" : {"color" : "brass", "colorname" : "Mässing", "textcolor" : "black"},
+						"file" : "brassround.png",
+						"shape" : "rectangel",
+						"size" : {"width" : "60","height": "30"}
+					}
+				},
+				"nickelround": {
+					"id" : "123213123",
+					"sku" : "sdad8989asd",
+					"name" : "Rund nickel",
+					"material" : "nickel",
+					"price" : "150",
+					"specs" : {
+						"color" : {"color" : "nickel", "colorname" : "Silver", "textcolor" : "black"},
+						"file" : "nickelround.png",
+						"shape" : "rectangel",
+						"size" : {"width" : "60","height": "30"}
+					}
+				}
+			}
+		},
+		"oval" : {
+			"category" : "oval",
+			"categoryname" : "Oval",
+			"categoryimage" : "cat-image-oval.png",
+			"categoryinterface" : {"magnet" : "magnet","pin" : "pin"},
+			"category-description" : "Namnbricka i metall Går utmärkt att gravera. Mått: 85x25 mm. Klämman är i rostfritt stål",
+			"items" : {
+				"plasticround": {
+					"id" : "123213123",
+					"sku" : "sdad8989asd",
+					"name" : "Oval vit",
+					"material" : "plast",
+					"price" : "150",
+					"specs" : {
+						"color" : {"color" : "white", "colorname" : "Vit", "textcolor" : "black"},
+						"file" : "plasticellips.png",
+						"shape" : "rectangel",
+						"size" : {"width" : "59","height": "34"}
+					}
+				},
+				"brassround": {
+					"id" : "123213123",
+					"sku" : "sdad8989asd",
+					"name" : "Oval mässing",
+					"material" : "mässing",
+					"price" : "150",
+					"specs" : {
+						"color" : {"color" : "brass", "colorname" : "Mässing", "textcolor" : "black"},
+						"file" : "brassellips.png",
+						"shape" : "rectangel",
+						"size" : {"width" : "59","height": "34"}
+					}
+				},
+				"nickelround": {
+					"id" : "123213123",
+					"sku" : "sdad8989asd",
+					"name" : "Oval nickel",
+					"material" : "nickel",
+					"price" : "150",
+					"specs" : {
+						"color" : {"color" : "nickel", "colorname" : "Silver", "textcolor" : "black"},
+						"file" : "nickelellips.png",
+						"shape" : "rectangel",
+						"size" : {"width" : "59","height": "34"}
+					}
+				}
+			}
+		},
+		"bulge" : {
+			"category" : "bulge",
+			"categoryname" : "Bulge",
+			"categoryimage" : "cat-image-bulge.png",
+			"categoryinterface" : {"magnet" : "magnet","pin" : "pin"},
+			"category-description" : "Namnbricka i metall Går utmärkt att gravera. Mått: 85x25 mm. Klämman är i rostfritt stål",
+			"items" : {
+				"plasticround": {
+					"id" : "123213123",
+					"sku" : "sdad8989asd",
+					"name" : "Bulge vit",
+					"material" : "plast",
+					"price" : "150",
+					"specs" : {
+						"color" : {"color" : "white", "colorname" : "Vit", "textcolor" : "black"},
+						"file" : "plasticbulge.png",
+						"shape" : "rectangel",
+						"size" : {"width" : "62","height": "32"}
+					}
+				},
+				"brassround": {
+					"id" : "123213123",
+					"sku" : "sdad8989asd",
+					"name" : "Bulge mässing",
+					"material" : "mässing",
+					"price" : "150",
+					"specs" : {
+						"color" : {"color" : "brass", "colorname" : "Mässing", "textcolor" : "black"},
+						"file" : "brassbulge.png",
+						"shape" : "rectangel",
+						"size" : {"width" : "62","height": "32"}
+					}
+				},
+				"nickelround": {
+					"id" : "123213123",
+					"sku" : "sdad8989asd",
+					"name" : "Bulge nickel",
+					"material" : "nickel",
+					"price" : "150",
+					"specs" : {
+						"color" : {"color" : "nickel", "colorname" : "Silver", "textcolor" : "black"},
+						"file" : "nickelbulge.png",
+						"shape" : "rectangel",
+						"size" : {"width" : "62","height": "32"}
+					}
+				}
+			}
+		}
+	}
+}

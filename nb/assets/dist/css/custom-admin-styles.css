@@ -1,0 +1,118 @@
+#woocommerce-product-data .hndle.ui-sortable-handle label[for="_virtual"],
+#woocommerce-product-data .hndle.ui-sortable-handle label[for="_downloadable"] {
+  display: none !important; }
+
+#woocommerce-order-downloads {
+  display: none !important; }
+
+.nb-order-wrapper > div {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: white; }
+
+.nb-order-wrapper > div.orders > div {
+  padding: 20px; }
+
+.nb-order-wrapper > div.orders > div:nth-child(odd) {
+  background-color: white; }
+
+.nb-order-wrapper > div.orders > div:nth-child(even) {
+  background-color: #eee; }
+
+.nb-order-wrapper > div .product-image {
+  color: black;
+  display: inline-block;
+  position: relative; }
+
+.nb-order-wrapper > div .product-image img {
+  height: auto; }
+
+.nb-order-wrapper > div .generate-image {
+  max-width: 300px;
+  width: 100%;
+  padding: 10px;
+  background-color: white; }
+
+.nb-order-wrapper > div .generate-image img {
+  display: inline-block;
+  max-width: 100%;
+  width: 100%;
+  height: auto; }
+
+.nb-order-wrapper > div .text-layer {
+  position: absolute;
+  width: 100%; }
+
+.nb-order-wrapper > div .text-layer p {
+  font-size: 1.2rem;
+  color: black;
+  margin: 0 !important;
+  padding: 0; }
+
+.nb-order-wrapper > div .customer-note {
+  font-size: 1rem;
+  color: #0b3350;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #0073aa;
+  background-color: #b8dff3; }
+
+.nb-order-wrapper > div table {
+  width: 100%;
+  border: 0;
+  background-color: blue; }
+
+.nb-order-wrapper > div table thead th {
+  text-align: left; }
+
+.nb-order-wrapper > div table tbody tr {
+  border: none; }
+
+.nb-order-wrapper > div table tbody tr:nth-child(even) {
+  background-color: #eee; }
+
+.nb-order-wrapper > div table tbody tr td {
+  border: none; }
+
+#adminmenu .wp-submenu a[href="admin.php?page=nb_order_page_sub.php"] {
+  display: none; }
+
+.toplevel_page_nb_order_page .manage-column {
+  text-align: left; }
+
+.toplevel_page_nb_order_page .flag {
+  display: inline-block;
+  max-width: 20px;
+  margin-right: 5px; }
+
+.toplevel_page_nb_order_page .flag img {
+  max-width: 100%;
+  height: auto; }
+
+@media print {
+  body.skyltdax-ordrar_page_nb_order_page_sub #adminmenuwrap {
+    display: none; }
+  body.skyltdax-ordrar_page_nb_order_page_sub .notice.notice-warning {
+    display: none; }
+  #klarna-kp-banner,
+  #adminmenuback,
+  #adminmenu {
+    display: none !important; }
+  #wpcontent {
+    margin-left: 0 !important; }
+  body.skyltdax-ordrar_page_nb_order_page_sub textarea {
+    border: none;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important; } }
+
+.skyltdax-ordrar_page_nb_order_page_sub .updated.notice {
+  display: none !important; }
+
+.skyltdax-ordrar_page_nb_order_page_sub #klarna-kp-banner {
+  display: none !important; }

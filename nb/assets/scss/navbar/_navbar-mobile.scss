@@ -1,0 +1,121 @@
+.hamburger {
+  border: none;
+}
+
+.navbar {
+  .navbar-mobile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    & > div {
+      flex: 1;
+    }
+
+    &-left {
+      display: flex;
+      align-content: center;
+
+      .hamburger {
+        font-size: 0.8rem;
+        color: var(--brown);
+        width: 54px;
+        background-color: transparent;
+        padding-top: 5px;
+        span {
+          display: block;
+          width: 20px;
+          height: 1px;
+          margin: 0 auto 5px auto;
+          border-bottom: 1px solid var(--brown);
+          border-radius: 2px;
+          background-color: var(--brown);
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .cart-trigger {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+
+      .cart-btn {
+        width: 44px;
+        height: 44px;
+        .amount {
+          display: none;
+        }
+        &::before {
+          background-position: center;
+        }
+        .cart-badge {
+          background-color: var(--brown);
+          top: 5px;
+          left: 0px;
+        }
+      }
+    }
+
+    .navbar-brand-mobile {
+      margin-left: auto;
+      margin-right: auto;
+
+      .logo-build {
+        max-width: 120px;
+      }
+
+      .logo-build > div {
+        font-size: 0.8rem;
+        text-transform: lowercase;
+      }
+    }
+
+    .navbar-mobile-cart {
+      border: none;
+      background-color: transparent;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      cursor: pointer;
+    }
+
+    .navbar-mobile-cart.cart {
+      font-family: inherit;
+      font-size: 1em;
+      color: #4a4a4a;
+      display: none;
+      margin: 0;
+      padding: 0;
+      width: 3.25rem;
+      height: 3.25rem;
+      background-image: url("../../images/svg/basket.svg");
+      background-size: 25px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: relative;
+    }
+
+    .navbar-mobile-cart.cart .cart-badge {
+      top: 5px;
+      left: 1px;
+    }
+
+    @media (max-width: 1024px) {
+      .navbar .navbar-brand-mobile {
+        display: inline-block;
+      }
+
+      .navbar .navbar-mobile-cart {
+        display: block;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+}

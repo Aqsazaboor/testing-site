@@ -1,0 +1,10 @@
+.button {
+  border-radius: 0;
+  &.is-primary {
+    background-color: var(--blue-500);
+    &:hover,
+    &.is-hovered {
+      background-color: var(--blue-600);
+    }
+  }
+}

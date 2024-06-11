@@ -1,0 +1,262 @@
+/* Bulma Extensions */
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+	color: var(--main-black);
+}
+
+.has-border-grey {
+	box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.1);
+}
+
+/* Checkout */
+
+.checkout {
+	
+}
+
+.checkout-container {
+	padding: 20px;
+	border: 1px solid #EEE;
+	background-color: white;
+}
+
+.checkout h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.checkout h1 + h2 {
+	text-align: center;
+	width: 100%;
+	position: relative;
+}
+
+.checkout h1 + h2::after {
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: var(--main-black);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.checkout h1 + h2 span {
+	padding: 0 20px 0 20px;
+	background-color: #f7f7f7;
+	position: relative;
+	z-index: 1;
+}
+
+.button-subtract {
+	content: "-";
+	width: 44px;
+	height: 44px;
+}
+
+.button-add {
+	content: "+";
+	width: 44px;
+	height: 44px;
+}
+
+.button-add.inactive,
+.button-subtract.inactive {
+	
+}
+
+.table.products {
+	width: 100%;
+}
+
+.table.products .preview-cart-item-modal-trigger img {
+	max-width: 150px;
+	width: 100%;
+	height: auto;
+}
+
+.button-delete {
+	background-position: center center;
+}
+
+.checkout .cart-image {
+	max-width: 150px;
+}
+
+/* Product */
+
+article.product {
+	text-align: center;
+	padding: 7px;
+    height: 100%;
+	border: 1px solid #EEE;
+}
+
+article.product .product-name {
+	font-size: 1rem;
+	font-weight: bold;
+	color: var(--main-black);
+}
+
+article.product .product-description {
+	font-size: 0.8rem;
+}
+
+article.product .product-image {
+    min-height: 123px;
+}
+
+article.products .product .product-inner .product-image {
+    min-height: 76px;
+}
+
+article.products .product[data-smat-id="9"] .thumbnail:before {
+	color: #EEE;
+    text-shadow: -1px -1px rgba(0, 0, 0, 0.1);
+}
+
+article.products .product .product-name {
+	font-size: 1.1rem !important;
+}
+
+article.product-image > div {
+	width: 100%;
+    height: auto;
+}
+
+article.product .product-inner .product-image .thumbnail {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+article.product span {
+	color: var(--main-black);
+	display: block;
+}
+
+article.product .price > span {
+	display: inline-block;
+	float: left;
+}
+
+article.product .product-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+article.product .product-image .thumbnail {
+	margin-bottom: 0;
+}
+
+body.lang-sv article.product[data-sid="265"] .thumbnail:before,
+body.lang-sv article.product[data-sid="270"] .thumbnail:before,
+body.lang-sv article.product[data-sid="269"] .thumbnail:before,
+body.lang-sv article.product[data-sid="268"] .thumbnail:before,
+body.lang-sv article.product[data-sid="267"] .thumbnail:before {
+	display: none;
+}
+
+/* Filters */
+
+.product-filtering {
+	padding-top: 5px;
+}
+
+.product-filtering .buttons {
+    justify-content: center;	
+}
+
+/* Footer */
+
+section.site-footer {
+	margin-top: 1rem;
+}
+
+/* Delivery partners */
+
+.shipping-partner {
+	text-align: center;
+	width: 100%;
+	height: 30px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.dhl {
+	background-image: url(../img/svg/shipping-dhl.svg);
+}
+
+.se-postnord {
+	background-image: url(../img/svg/shipping-postnord.svg);
+}
+
+.de-post {
+	background-image: url(../img/svg/shipping-deutsche-post.svg);
+}
+
+.fi-posti {
+	background-image: url(../img/svg/shipping-posti-fi.svg);
+}
+
+.dk-post {
+	background-image: url(../img/svg/shipping-post-dk.svg);
+}
+
+.ups {
+	background-image: url(../img/svg/shipping-ups.svg);
+}
+
+/* Loader */
+
+.loader-wrapper {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+}
+
+.loader-wrapper .loader {
+	height: 80px;
+	width: 80px;
+}
+
+/* Off canvas panel */
+
+.off-canvas-panel {
+	height: 100%;
+	background-color: white;
+	box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.3);
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 99;
+}
+
+.off-canvas-panel .menu-mobilmeny-container {
+
+}
+
+.off-canvas-panel .mobile-nav h3 {
+	padding: 15px;
+	background-color: #EEE;
+}
+
+.off-canvas-panel .menu {
+	padding: 15px;
+}
+
+.off-canvas-panel .mobile-nav .nav {
+	display: inline-block;
+	width: 100%;
+    padding: 15px;
+}
+
+.panel-cart {
+	padding: 15px;
+}

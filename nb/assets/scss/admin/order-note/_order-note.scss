@@ -1,0 +1,87 @@
+.sdx-app {
+  .note {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 3px;
+    padding: 0px 6px;
+    padding-left: 17px;
+    border-radius: 20px;
+    background-color: #135e96;
+    background-image: url("../../images/icons/icon-notification-white.svg");
+    background-position: 5px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+}
+
+.order-add-admin-note {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #e4e4e4;
+  background-color: #f7f7f7;
+
+  textarea {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+.order-notes {
+  &-filters {
+    display: flex;
+    margin-bottom: 6px;
+
+    button {
+      color: #135e96;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+      &.button-active {
+        font-weight: 600;
+      }
+    }
+  }
+  .order-note {
+    padding: 18px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    border: 1px solid #e4e4e4;
+    background-color: #f7f7f7;
+
+    .order-note-date,
+    .order-note-author {
+      font-size: 0.7rem;
+      color: #666;
+    }
+
+    &.order-note-hidden {
+      display: none;
+    }
+  }
+}
+
+.customer-note {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  padding: 12px 12px 12px 27px;
+  border-radius: 6px;
+  border: 1px solid #e4e4e4;
+  background-color: #f7f7f7;
+
+  background-image: url(../../images/icons/icon-notification.svg);
+  background-position: 7px;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}

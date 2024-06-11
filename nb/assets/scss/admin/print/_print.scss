@@ -1,0 +1,123 @@
+@media print {
+  body {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+  }
+
+  .order-item-image-wrapper {
+    justify-content: left;
+    img {
+      max-height: 200px;
+      width: auto;
+    }
+  }
+
+  .order-items {
+    .order-item {
+      display: flex;
+      border: none !important;
+      border-radius: 0 !important;
+      border-top: 1px solid #e4e4e4 !important;
+      & > div {
+        flex: 1;
+      }
+      .order-item__description {
+        display: none;
+      }
+    }
+  }
+
+  // post-type-shop_order
+
+  .sdx-app {
+    .order-status-custom {
+      color: black !important;
+      border: 1px solid black;
+    }
+    .order-wrapper > .row.order-details {
+      display: flex;
+      flex-direction: row !important;
+
+      & > .col {
+        padding: 0;
+      }
+
+      .flex-table {
+        & > div {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+    .col {
+      padding: 5px 15px 0 15px !important;
+      &.order-details {
+        padding: 0px 20px 0 20px !important;
+      }
+      &.order-products {
+        order: 2;
+      }
+
+      &.order-comments {
+        order: -1;
+
+        .order-note {
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  // Print for ordinary WooCommerce
+  #woocommerce-order-data {
+    .panel-wrap.woocommerce {
+      margin-left: 20px;
+      .woocommerce-order-data__meta.order_number {
+        display: none;
+      }
+    }
+  }
+
+  #order_data {
+    &.panel.woocommerce-order-data {
+      margin-top: 0;
+    }
+  }
+
+  #custom_order_app {
+    // Order details
+    .textarea {
+      border: none !important;
+    }
+    .create-image__container {
+      display: none;
+    }
+  }
+
+  .postbox-container {
+    #woocommerce-order-source-data {
+      display: none;
+    }
+    #woocommerce-customer-history {
+      display: none;
+    }
+    #woocommerce-order-shipping-label {
+      display: none;
+    }
+  }
+
+  // Shipping
+  .shipping {
+    border: 2px solid black;
+    .name {
+      & > div {
+        &:first-of-type {
+          &.view {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}

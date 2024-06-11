@@ -1,0 +1,57 @@
+body.page-template-page-gutenberg-landingpage {
+  @include gutenberg-page-common;
+
+  .storefront-breadcrumb {
+    display: none;
+  }
+
+  .wp-block-group {
+    &.has-categories-with-images {
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      .wp-block-columns {
+        gap: 0;
+      }
+
+      .is-layout-flex {
+        flex-wrap: unset;
+        gap: 0;
+      }
+
+      .wp-block-buttons {
+        .wp-block-button {
+          align-self: flex-start;
+          &.wp-block-button__width-100 {
+            a {
+              font-weight: 300;
+              color: var(--brown);
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              border: none;
+              background-color: transparent;
+              background-image: none;
+              img {
+                max-height: 70px;
+                width: auto !important;
+                margin-bottom: 4px;
+                border-radius: 32px;
+                border: 4px solid #3614081a;
+                overflow: hidden;
+              }
+            }
+          }
+          @media (max-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            & > div {
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

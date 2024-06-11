@@ -1,0 +1,5 @@
+node_modules
+
+# Ignore dynamically created files in data folder
+data/
+data/*

@@ -1,0 +1,38 @@
+.has-icyblue-background-color {
+  background-color: var(--icy-blue);
+}
+
+.has-khaki-background-color {
+  background-color: var(--khaki);
+}
+
+.has-chocolatebrown-background-color {
+  background-color: var(--brown);
+}
+
+.has-chocolatebrown-background-color {
+  background-color: var(--secondary-blue-aria);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  &.has-icyblue-color {
+    color: var(--icy-blue);
+  }
+
+  &.has-khaki-color {
+    color: var(--khaki);
+  }
+
+  &.has-chocolatebrown-color {
+    color: var(--brown);
+  }
+
+  &.has-secondaryblue-color {
+    color: var(--secondary-blue-aria);
+  }
+}

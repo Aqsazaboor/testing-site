@@ -1,0 +1,41 @@
+.category-squares {
+  background-color: white;
+
+  a {
+    display: inline-block;
+  }
+
+  .item {
+    text-align: center;
+    background-color: white;
+    position: relative;
+
+    .item-title {
+      text-align: center;
+      font-size: 2rem;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      span {
+        font-size: 1rem;
+        color: #ffffff;
+        display: inline-block;
+        padding: 10px 20px;
+        @include border_radius(40px);
+        background-color: $kuler-orange;
+      }
+    }
+
+    .item-image {
+    }
+
+    img {
+      display: inline-block;
+      padding: 20px;
+      max-width: 250px;
+      height: auto;
+    }
+  }
+}

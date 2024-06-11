@@ -1,0 +1,42 @@
+/* Flags */
+
+.flag {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.flag-se,
+.flag-sv {
+  background-image: url("../../images/flags/flag-sweden.png");
+}
+
+.flag-fi {
+  background-image: url("../../images/flags/flag-finland.png");
+}
+
+.flag-da,
+.flag-dk {
+  background-image: url("../../images/flags/flag-denmark.png");
+}
+
+.flag-gb,
+.flag-uk,
+.flag-en {
+  background-image: url("../../images/flags/flag-england.png");
+}
+
+.flag-de {
+  background-image: url("../../images/flags/flag-germany.png");
+}
+
+.flag-nl {
+  background-image: url("../../images/flags/flag-netherlands.png");
+}
+
+.flag-fr {
+  background-image: url("../../images/flags/flag-france.png");
+}

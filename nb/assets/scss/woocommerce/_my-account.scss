@@ -1,0 +1,32 @@
+.woocommerce-form-login {
+  &__wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid #ddd;
+    background-color: white;
+    box-shadow: 0 3px 18px rgba(39, 42, 47, 0.12);
+
+    h2 {
+      letter-spacing: 0.05rem;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .woocommerce-form.woocommerce-form-login.login {
+      padding: 0;
+      box-shadow: none;
+    }
+    .woocommerce-button.button.woocommerce-form-login__submit {
+      max-height: 100px;
+      width: 100%;
+      padding: 24px;
+      margin-top: 16px;
+      &:hover {
+        color: var(--black);
+        background-color: #f7f7f7;
+      }
+    }
+  }
+}

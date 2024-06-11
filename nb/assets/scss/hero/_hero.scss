@@ -1,0 +1,218 @@
+.hero {
+  &.is-small {
+    .hero-body {
+      padding-bottom: 0;
+    }
+
+    .hero-body .columns:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .hero-body {
+        padding: 0 0 10px 0;
+      }
+
+      .columns {
+        margin: 0;
+      }
+    }
+  }
+
+  .frontpage-hero {
+    position: relative;
+
+    .price-badge {
+      font-size: 1.5rem;
+      line-height: 1;
+      text-align: center;
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      border-radius: 100%;
+      background-color: var(--main-red-dark);
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      div {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        span {
+          color: white;
+        }
+      }
+    }
+
+    .hero-inner {
+      min-height: 300px;
+
+      // Campaign
+      &.hero-inner-custom {
+        overflow: hidden;
+        position: relative;
+        @media (max-width: 768px) {
+          .hero-content {
+            line-height: 1.4rem;
+            width: 65%;
+            padding: 16px 10px 16px 6px;
+            z-index: 3;
+
+            h1 {
+              font-size: 1.3rem;
+            }
+          }
+        }
+
+        .hero-content-image {
+          width: 40%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+          right: 0;
+
+          @media (max-width: 768px) {
+            top: 0;
+            background-size: contain;
+          }
+        }
+
+        a {
+          font-weight: 600;
+          text-align: center;
+          display: inline-block;
+          color: white;
+          margin-top: 8px;
+          padding-bottom: calc(0.5em - 1px);
+          padding-left: 1em;
+          padding-right: 1em;
+          padding-top: calc(0.5em - 1px);
+          border-radius: 4px;
+          background-color: var(--orange);
+          @media (max-width: 768px) {
+            display: block;
+          }
+        }
+
+        blockquote {
+          font-weight: 600;
+          text-align: center;
+          line-height: 70px;
+          color: white;
+          width: 70px;
+          height: 70px;
+          padding: 0;
+          border-radius: 100%;
+          background-color: var(--orange);
+          position: absolute;
+          top: 20px;
+          right: -70px;
+          z-index: 1;
+        }
+      }
+    }
+
+    .hero-content {
+      max-width: 470px;
+      padding: 30px 30px 30px 60px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+
+      .title {
+        color: var(--main-black);
+      }
+
+      .subtitle {
+        color: var(--main-black);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .price-badge {
+        display: none;
+      }
+
+      .hero-inner {
+        min-height: auto;
+      }
+
+      .hero-content {
+        padding: 20px;
+        position: relative;
+        top: auto;
+        left: auto;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        transform: none;
+      }
+
+      .hero-image {
+        display: none;
+      }
+    }
+  }
+
+  .customer-service {
+    border-left: 1px solid #eee;
+
+    .media {
+      align-items: start;
+      @media (min-width: 1024px) {
+        align-items: center;
+      }
+    }
+
+    .media .image img {
+      margin-top: 5px;
+      border-radius: 4px !important;
+    }
+
+    & > div > div {
+      border-bottom: 1px solid #eee;
+
+      &:last-of-type {
+        border-bottom: 0;
+      }
+
+      h2 {
+        font-weight: 600;
+      }
+
+      a {
+        line-height: 1.4;
+        color: var(--main-black);
+        display: inline-block;
+        padding-right: 40px;
+        position: relative;
+
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 44px;
+          height: 44px;
+          position: absolute;
+          top: 50%;
+          right: 0;
+
+          background-image: url("../../images/icons/icon-angle-right.svg");
+          background-repeat: no-repeat;
+          background-position: center center;
+
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}

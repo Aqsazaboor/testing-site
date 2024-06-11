@@ -1,0 +1,167 @@
+body.page-template-page-about-us .hero {
+  background-color: #666;
+  position: relative;
+  overflow: hidden;
+}
+
+body.page-template-page-about-us .hero-body {
+  position: relative;
+  z-index: 99;
+}
+
+body.page-template-page-about-us .hero-body {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 769px), print {
+  body.page-template-page-about-us .hero-body {
+    padding: 3rem 3rem;
+  }
+}
+
+body.page-template-page-about-us .hero .hero-body > div {
+  max-width: 650px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  body.page-template-page-about-us .hero {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUwIDUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MCA1MDsiIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZT4KCS5kb3QxIHsKCQktd2Via2l0LWFuaW1hdGlvbjogYm91bmNlMTsKCQktd2Via2l0LWFuaW1hdGlvbi1kdXJhdGlvbjogMXM7CgkJYW5pbWF0aW9uOiBib3VuY2UxIGluZmluaXRlOwoJCWFuaW1hdGlvbi1kdXJhdGlvbjogMXM7Cgl9CgoJLmRvdDIgewoJCS13ZWJraXQtYW5pbWF0aW9uOiBib3VuY2UyIGluZmluaXRlOwoJCS13ZWJraXQtYW5pbWF0aW9uLWR1cmF0aW9uOiAxczsKCQlhbmltYXRpb246IGJvdW5jZTIgaW5maW5pdGU7CgkJYW5pbWF0aW9uLWR1cmF0aW9uOiAxczsKCX0KCgkuZG90MyB7CgkJLXdlYmtpdC1hbmltYXRpb246IGJvdW5jZTMgaW5maW5pdGU7CgkJLXdlYmtpdC1hbmltYXRpb24tZHVyYXRpb246IDFzOwoJCWFuaW1hdGlvbjogYm91bmNlMyBpbmZpbml0ZTsKCQlhbmltYXRpb24tZHVyYXRpb246IDFzOwoJfQoKCS5kb3QxLCAuZG90MiwgLmRvdDMgewoJCWZpbGw6IHdoaXRlOwoJCS13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDUwJSk7CgkJLW1vei10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoNTAlKTsKCQktby10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoNTAlKTsKCQl0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoNTAlKTsKCX0KCglALXdlYmtpdC1rZXlmcmFtZXMgYm91bmNlMSB7CgkJMCUge3RyYW5zZm9ybTogdHJhbnNsYXRlWSgwcHgpfQoJCTMwJSB7dHJhbnNmb3JtOiB0cmFuc2xhdGVZKDIwcHgpfQoJCTEwMCUge3RyYW5zZm9ybTogdHJhbnNsYXRlWSgwcHgpfQoJfQoKCUBrZXlmcmFtZXMgYm91bmNlMSB7CgkJMCUge3RyYW5zZm9ybTogdHJhbnNsYXRlWSgwcHgpfQoJCTMwJSB7dHJhbnNmb3JtOiB0cmFuc2xhdGVZKDIwcHgpfQoJCTEwMCUge3RyYW5zZm9ybTogdHJhbnNsYXRlWSgwcHgpfQoJfQoKCUAtd2Via2l0LWtleWZyYW1lcyBib3VuY2UyIHsKCQkwJSB7dHJhbnNmb3JtOiB0cmFuc2xhdGVZKDBweCl9CgkJNTAlIHt0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMjBweCl9CgkJMTAwJSB7dHJhbnNmb3JtOiB0cmFuc2xhdGVZKDBweCl9Cgl9CgoJQGtleWZyYW1lcyBib3VuY2UyIHsKCQkwJSB7dHJhbnNmb3JtOiB0cmFuc2xhdGVZKDBweCl9CgkJNTAlIHt0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMjBweCl9CgkJMTAwJSB7dHJhbnNmb3JtOiB0cmFuc2xhdGVZKDBweCl9Cgl9CgoJQC13ZWJraXQta2V5ZnJhbWVzIGJvdW5jZTMgewoJCTAlIHt0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMHB4KX0KCQk3MCUge3RyYW5zZm9ybTogdHJhbnNsYXRlWSgyMHB4KX0KCQkxMDAlIHt0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMHB4KX0KCX0KCglAa2V5ZnJhbWVzIGJvdW5jZTMgewoJCTAlIHt0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMHB4KX0KCQk3MCUge3RyYW5zZm9ybTogdHJhbnNsYXRlWSgyMHB4KX0KCQkxMDAlIHt0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMHB4KX0KCX0KPC9zdHlsZT4KPGNpcmNsZSBjbGFzcz0iZG90MSIgY3g9IjEwLjYiIGN5PSIyNSIgcj0iNS4zIi8+CjxjaXJjbGUgY2xhc3M9ImRvdDIiIGN4PSIyNSIgY3k9IjI1IiByPSI1LjMiLz4KPGNpcmNsZSBjbGFzcz0iZG90MyIgY3g9IjM5LjQiIGN5PSIyNSIgcj0iNS4zIi8+Cjwvc3ZnPg==);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+body.page-template-page-about-us section.content-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+body.page-template-page-about-us .four-easy-steps .step img {
+  max-width: 200px;
+  height: auto;
+}
+
+body.page-template-page-about-us .four-easy-steps .step p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+body.page-template-page-about-us .from-to {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation-name: bounce;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 5;
+  transform-box: fill-box;
+  transform-origin: -50% -50%;
+}
+
+body.page-template-page-about-us section.content-section .column {
+  position: relative;
+}
+
+body.page-template-page-about-us .from-to div {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f5a351;
+  color: #3f3d56;
+  padding: 5px 16px;
+  margin: 5px;
+  border-radius: 5px;
+  background: white;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -70%);
+    -moz-transform: translate(-50%, -70%);
+    -o-transform: translate(-50%, -70%);
+    transform: translate(-50%, -70%);
+  }
+}
+
+body.page-template-page-about-us .quote {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f5a351;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: -2px 0px 9px 0px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+body.page-template-page-about-us .quote h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: white;
+}
+
+body.page-template-page-about-us section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+body.page-template-page-about-us .quote a {
+  color: white;
+}
+
+body.page-template-page-about-us .module-hero-fullwidth-video {
+  position: absolute;
+  top: -50% !important;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: calc(100vh - 100px);
+  width: 100%;
+}
+
+body.page-template-page-about-us .module-hero-fullwidth-video .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+body.page-template-page-about-us .module-hero-fullwidth-video iframe {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}

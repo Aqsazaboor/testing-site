@@ -1,0 +1,122 @@
+// Build image in cart with canvas generated layer
+
+body.woocommerce-checkout,
+body.woocommerce-cart.woocommerce-js {
+  .entry-header {
+    padding-bottom: 1em;
+  }
+
+  .cart-image {
+    margin-bottom: $spacing-xs / 2;
+
+    img,
+    .cart-image-real {
+      max-width: 150px;
+    }
+  }
+
+  .cart-extra-fields {
+    list-style-type: none !important;
+    margin: 10px 0 0 0;
+    padding: 10px;
+    border: 1px solid $border-color;
+
+    li {
+      font-size: 0.8em;
+    }
+
+    li {
+      &:not(.cart-image) {
+        display: none;
+      }
+    }
+  }
+
+  // Table
+  .woocommerce-cart-form__cart-item {
+    td {
+      background-color: #ffffff;
+    }
+  }
+
+  table.cart td.product-remove,
+  table.cart td.actions {
+    border-top-color: transparent;
+  }
+
+  .shop_table .woocommerce-cart-form__cart-item.cart_item {
+    .cart-extra-fields {
+      #oi {
+        position: relative;
+
+        & > img {
+          &:first-child {
+            width: 100%;
+            height: auto;
+            position: relative;
+            z-index: 10;
+          }
+        }
+
+        .cart-image-real {
+          width: 100%;
+          height: auto;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.woocommerce-mini-cart {
+  .product_list_widget li > a {
+    padding: 0;
+  }
+
+  .product_list_widget {
+    li {
+      border: none;
+    }
+  }
+
+  .woocommerce-mini-cart-item.mini_cart_item {
+    margin-bottom: 3px;
+    @include border_radius(10px);
+    background-color: white;
+
+    .cart-image {
+      max-width: 150px;
+      height: auto;
+      padding: 0;
+      margin-top: $spacing-xs / 2;
+    }
+  }
+
+  .cart-extra-fields {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      &:not(.cart-image) {
+        display: none;
+      }
+
+      &.cart-image {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.woocommerce-order-received.woocommerce-js .wc-item-meta {
+  display: none;
+}
+
+.hentry {
+  padding-top: 20px;
+}

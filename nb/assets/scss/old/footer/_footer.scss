@@ -1,0 +1,89 @@
+// Footer
+
+.site-footer {
+	color: $footer-text-color;
+
+	padding-top: 5em;
+	padding-bottom: 5em;
+	border-top: 1px solid $border-color;
+	background-color: $footer-background;
+	
+	h2, h3, h4, h5, h6 {
+		color: $footer-text-color;
+	}
+	
+	a:not(.button) {
+		color: $footer-text-color;
+	}
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.product-tags {
+		margin: 0;
+		padding: 0;
+		
+		li {
+			display: inline-block;
+			line-height: 1;
+			
+			margin-right: 3px;
+			margin-bottom: 3px;
+			@include border_radius(4px);
+			border: 1px solid rgba(255,255,255,0.3);
+			background-color: white;
+			
+			a {
+				font-size: $small-text;
+				color: $footer-text-color;
+				padding: 0 5px;
+			}
+		}
+	}
+	
+	// Trust icons
+	.trust-icons {
+		.trust-icon {
+			vertical-align: top;
+			display: inline-block;
+			max-width: 100%;
+			width: 60px;
+			height: auto;
+			margin-right: 10px;
+			
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+	
+	// Language
+	.language-switcher {
+		list-style-type: none;
+		margin-bottom: $spacing-xs;
+		.lang-item {
+			display: inline-block;
+			width: auto;
+		}
+	}
+	
+}
+
+.customer-support-container {
+	.customer-support-avatar {
+		width: 80px;
+		height: 80px;
+		@include border_radius(100%);
+		border: 5px solid white;
+		background-color: white;
+		overflow: hidden;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}	
+}

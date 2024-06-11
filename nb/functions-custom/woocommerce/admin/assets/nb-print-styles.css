@@ -1,0 +1,127 @@
+@page {
+	size: A4;
+	margin: 0;
+}
+
+@media print {
+	
+	html, body {
+		width: 210mm;
+		height: 297mm;
+	}
+	
+	html.wp-toolbar {
+		padding-top: 0;
+	}
+	
+	.woocommerce-message {
+		display: none;
+	}
+	
+	#wpcontent {
+		padding: 0;
+	}
+	
+	.wrap {
+		margin: 0;
+	}
+	
+	#poststuff {
+		min-width: 0;
+		max-width: 100%;
+	}
+	
+	.postbox, .stuffbox {
+		margin: 0;
+	}
+	
+	#woocommerce-order-items .woocommerce_order_items_wrapper {
+		overflow: visible;
+	    overflow-x: visible;
+	}
+	
+	#woocommerce-order-notes .handle-actions,
+	#woocommerce-order-notes .delete_note {
+		display: none;
+	}
+
+	.woocommerce-layout,
+	#screen-meta-links,
+	.wrap h1.wp-heading-inline,
+	.page-title-action,
+	.woocommerce-layout__header,
+	#wpfooter,
+	#woocommerce-order-actions {
+		display: none !important;
+	}
+	
+	#order_data .order_data_column_container > .order_data_column:first-child {
+		display: none !important;
+	}
+	
+	.edit_address {
+		display: none !important;
+	}
+	
+	#post-body.columns-2 #postbox-container-1 {
+		float: left;
+		margin-right: 0;
+		width: 280px;
+	}
+	
+	#post-body.columns-2 #side-sortables {
+		min-height: 1px;
+	}
+	
+	#post-body.columns-2 #postbox-container-1 .add_note {
+		display: none;
+	}
+	
+	#poststuff #post-body.columns-2 {
+		margin-right: 0;
+	}
+	
+	.woocommerce-order-items {
+		margin-bottom: 0;
+	}
+	
+	.postbox {
+		border: none;
+		border-bottom: 1px solid #333;
+		box-shadow: none !important;
+	}
+	
+	#order_data {
+		padding: 0 !important;
+	}
+	
+	.download-motif-as-pdf,
+	.wc-order-data-row.wc-order-bulk-actions.wc-order-data-row-toggle {
+		display: none;
+	}
+	
+	#post-body {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#post-body #postbox-container-1 {
+		order: 2;
+	}
+	
+	#post-body #postbox-container-2 {
+		order: 1;
+	}
+	
+	/* Order items */
+	
+	footer {
+		page-break-after: always;
+	}
+	
+	/* Meta fields */
+	.meta-order-image {
+		display: none;
+	}
+
+}

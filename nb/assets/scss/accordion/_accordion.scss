@@ -1,0 +1,54 @@
+.accordion {
+  &__item {
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    border: 1px solid var(--main-border);
+    overflow: hidden;
+
+    &--question {
+      background-color: #f7f7f7;
+      button {
+        font-weight: 800;
+        padding: 1rem;
+        padding-left: 50px;
+        text-align: left;
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        position: relative;
+
+        &:hover {
+          color: var(--black);
+          background-color: #f7f7f7;
+        }
+        &::before {
+          content: "+";
+          text-align: center;
+          line-height: 30px;
+          color: white;
+          display: inline;
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+          background-color: var(--black);
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    &--answer {
+      & > div {
+        padding: 1rem;
+
+        a {
+          color: var(--theme-link-color);
+          &:hover {
+            color: var(--theme-link-color-hover);
+          }
+        }
+      }
+    }
+  }
+}
